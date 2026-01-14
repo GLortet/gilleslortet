@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% set title = "Circuit Vital | Gilles Lortet" %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Circuit Vital</p>
+        <h1>Réguler les tensions par le corps, simplement.</h1>
+        <p class="lead">Circuit Vital est une pratique courte, accessible, qui aide à relâcher les tensions et à retrouver de la présence avant une réunion, une intervention ou un moment sensible.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Pourquoi cette approche ?</h2>
+        </div>
+        <div class="list-grid">
+            <div>
+                <h4>Prévention</h4>
+                <p>Réduire l'accumulation de stress avant qu'elle n'impacte la relation.</p>
+            </div>
+            <div>
+                <h4>Sobriété</h4>
+                <p>Un protocole simple, sans matériel, réalisable partout.</p>
+            </div>
+            <div>
+                <h4>Terrain</h4>
+                <p>Conçu pour les équipes exposées et les environnements opérationnels.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="container">
+        <div class="section-header">
+            <h2>Intégration avec PCM</h2>
+            <p>La communication se clarifie quand la tension baisse. Circuit Vital complète PCM en agissant directement sur la régulation.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <h3>Avant un échange difficile</h3>
+                <p>Créer les conditions d'une discussion plus posée.</p>
+            </article>
+            <article class="card">
+                <h3>Dans une démarche HSE</h3>
+                <p>Renforcer les pratiques de prévention avec un geste concret.</p>
+            </article>
+            <article class="card">
+                <h3>En accompagnement d'équipe</h3>
+                <p>Soutenir la cohésion quand la pression est forte.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container callout">
+        <div>
+            <h2>Vous souhaitez tester ?</h2>
+            <p>Un atelier court permet d'évaluer la pertinence du protocole pour vos équipes.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Nous contacter</a>
+    </div>
+</section>
+{% endblock %}

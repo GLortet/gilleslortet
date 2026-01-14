@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title if title else "Gilles Lortet" }}</title>
+    <meta name="description" content="Formation et accompagnement en fonctionnement humain. Process Communication Model (PCM) et Circuit Vital.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="{{ url_for('home') }}">Gilles Lortet</a>
+            <nav class="nav">
+                <a href="{{ url_for('home') }}">Accueil</a>
+                <a href="{{ url_for('approche') }}">Approche</a>
+                <a href="{{ url_for('pcm') }}">PCM</a>
+                <a href="{{ url_for('circuitvital') }}">Circuit Vital</a>
+                <a href="{{ url_for('a_propos') }}">À propos</a>
+                <a class="nav-contact" href="{{ url_for('contact') }}">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-title">Gilles Lortet</p>
+                <p>Formation et accompagnement en fonctionnement humain.</p>
+            </div>
+            <div>
+                <p class="footer-title">Contact</p>
+                <p><a href="mailto:contact@gilleslortet.fr">contact@gilleslortet.fr</a></p>
+                <p>Basé en France — interventions nationales.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Gilles Lortet. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

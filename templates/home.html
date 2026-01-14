@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% set title = "Gilles Lortet | Formation et accompagnement humain" %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <p class="eyebrow">Formateur certifié Process Communication Model (PCM) • Créateur de Circuit Vital</p>
+            <h1>Clarifier les relations, apaiser les tensions, soutenir la décision.</h1>
+            <p class="lead">Un accompagnement sobre et exigeant pour les dirigeants, RH et responsables HSE qui veulent retrouver de la qualité relationnelle, sans posture ni jargon.</p>
+            <div class="hero-actions">
+                <a class="button" href="{{ url_for('contact') }}">Entrer en contact</a>
+                <a class="button button-ghost" href="{{ url_for('approche') }}">Découvrir l'approche</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <h2>Ce que vous cherchez sans le dire</h2>
+            <ul>
+                <li>Un espace pour poser les tensions et clarifier les enjeux humains.</li>
+                <li>Des repères simples pour agir sous pression.</li>
+                <li>Une méthode qui respecte le terrain et les personnes.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Deux portes d'entrée, un même socle humain</h2>
+            <p>PCM et Circuit Vital répondent à des besoins différents, mais se rejoignent sur une même conviction : la relation se travaille avec clarté, et la régulation passe aussi par le corps.</p>
+        </div>
+        <div class="cards">
+            <article class="card">
+                <h3>Process Communication Model (PCM)</h3>
+                <p>Une lecture précise des personnalités, des modes de communication et des réactions sous stress. Pour décider, manager et coopérer avec plus de justesse.</p>
+                <a class="text-link" href="{{ url_for('pcm') }}">Voir la page PCM</a>
+            </article>
+            <article class="card">
+                <h3>Circuit Vital</h3>
+                <p>Une pratique corporelle simple, dix minutes, pour prévenir la surcharge et restaurer l'énergie relationnelle. Adaptée aux contextes HSE et aux équipes.</p>
+                <a class="text-link" href="{{ url_for('circuitvital') }}">Voir Circuit Vital</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="container">
+        <div class="section-header">
+            <h2>Une posture claire</h2>
+            <p>Ni coaching inspirationnel, ni discours marketing. Un accompagnement incarné, issu du terrain, pour des environnements exigeants.</p>
+        </div>
+        <div class="list-grid">
+            <div>
+                <h4>Clarté relationnelle</h4>
+                <p>Rendre lisibles les dynamiques humaines pour agir vite et bien.</p>
+            </div>
+            <div>
+                <h4>Décision sous pression</h4>
+                <p>Stabiliser les échanges quand la tension monte.</p>
+            </div>
+            <div>
+                <h4>Prévention durable</h4>
+                <p>Réduire l'usure relationnelle avant qu'elle ne devienne un risque.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container callout">
+        <div>
+            <h2>Vous souhaitez échanger ?</h2>
+            <p>Un premier échange permet de clarifier le contexte, les attentes et les prochaines étapes.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Prendre contact</a>
+    </div>
+</section>
+{% endblock %}
