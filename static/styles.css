@@ -81,7 +81,7 @@ ul {
     left: -999px;
     top: 12px;
     background: var(--accent);
-    color: #fff;
+    color: #ffffff;
     padding: 8px 16px;
     border-radius: 999px;
 }
@@ -154,7 +154,7 @@ ul {
     padding: 10px 20px;
     border-radius: 999px;
     background: var(--accent);
-    color: #fff;
+    color: #ffffff;
     border: 1px solid var(--accent);
     font-weight: 600;
     line-height: 1;
