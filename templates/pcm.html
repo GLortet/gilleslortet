@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% set title = "PCM | Process Communication Model" %}
+{% set page_class = "page-pcm" %}
+{% set description = "Comprendre les comportements sous pression et améliorer la communication grâce au Process Communication Model." %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Process Communication Model</p>
+        <h1>PCM, sans jargon</h1>
+        <div class="flow measure">
+            <p class="lead">Le PCM aide à lire les signaux humains en situation de stress, à ajuster la communication et à sécuriser les décisions.</p>
+            <p class="lead">C'est un cadre simple, appliqué et durable.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Pourquoi PCM</p>
+            <h2>Comprendre ce qui se joue, avant que ça ne déborde</h2>
+        </div>
+        <div class="two-columns">
+            <div class="card reveal">
+                <h3>Lecture rapide des comportements</h3>
+                <p>Identifier les besoins psychologiques qui se cachent derrière les réactions sous pression.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Outils simples pour décider</h3>
+                <p>Une grille claire pour adapter sa communication, éviter les malentendus et réduire la friction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Sous pression</p>
+            <h2>Ce qui change quand la tension monte</h2>
+        </div>
+        <ul class="bullet-list reveal">
+            <li>Les messages se raccourcissent, les interprétations s'accélèrent.</li>
+            <li>Les styles de décision se crispent et s'opposent.</li>
+            <li>Les équipes confondent urgence et précipitation.</li>
+            <li>La coopération se fragilise, même entre experts solides.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Formats PCM</p>
+            <h2>Des formats adaptés aux instances dirigeantes et au terrain</h2>
+        </div>
+        <div class="cards format-grid">
+            <article class="card reveal">
+                <h3>CODIR / COMEX</h3>
+                <p class="card-meta">½ journée à 1 jour</p>
+                <p>Clarifier les styles de décision, sécuriser la communication en période de tension.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Managers</h3>
+                <p class="card-meta">1 à 2 jours</p>
+                <p>Lire les signaux faibles, prévenir les escalades, gérer les échanges difficiles.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Équipes terrain</h3>
+                <p class="card-meta">Ateliers courts</p>
+                <p>Créer un langage commun pour gérer les conflits et maintenir la coopération.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions fréquentes</h2>
+        </div>
+        <div class="faq-grid reveal">
+            <details>
+                <summary>PCM, c'est un test de personnalité ?</summary>
+                <p>Non. C'est un modèle de communication qui aide à comprendre comment chacun fonctionne sous pression.</p>
+            </details>
+            <details>
+                <summary>Est-ce applicable sur le terrain industriel ?</summary>
+                <p>Oui, le PCM est utilisé dans des environnements exigeants où la clarté des échanges est vitale.</p>
+            </details>
+            <details>
+                <summary>Combien de temps faut-il pour voir des effets ?</summary>
+                <p>Dès les premiers ateliers, les équipes gagnent un vocabulaire commun pour désamorcer les tensions.</p>
+            </details>
+            <details>
+                <summary>Peut-on le combiner avec Circuit Vital ?</summary>
+                <p>Oui. PCM clarifie les interactions, Circuit Vital régule la tension corporelle. Les deux se renforcent.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">PCM</p>
+            <h2>Voir le format qui vous correspond</h2>
+            <p>Un échange rapide suffit pour cadrer le bon niveau d'intervention.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+    </div>
+</section>
+{% endblock %}
