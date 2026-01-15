@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% set title = "Circuit Vital | Routine corporelle" %}
+{% set page_class = "page-circuitvital" %}
+{% set description = "Circuit Vital : une routine de 5 à 10 minutes pour réguler la tension, prévenir l'usure et maintenir la qualité relationnelle." %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Circuit Vital</p>
+        <h1>Une routine simple pour réguler la tension</h1>
+        <div class="flow measure">
+            <p class="lead">Circuit Vital est une pratique corporelle courte, accessible à tous, pensée pour les contextes où la pression est quotidienne.</p>
+            <p class="lead">5 à 10 minutes suffisent pour retrouver un état plus stable.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Pourquoi ça marche</p>
+            <h2>Quand le corps se relâche, la communication s'apaise</h2>
+        </div>
+        <div class="two-columns">
+            <div class="card reveal">
+                <h3>Une routine courte</h3>
+                <p>Facile à intégrer entre deux réunions, sur un poste de travail ou en atelier.</p>
+            </div>
+            <div class="card reveal">
+                <h3>Un effet immédiat</h3>
+                <p>On observe un retour au calme plus rapide et une meilleure capacité d'écoute.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Cas d'usage</p>
+            <h2>Où Circuit Vital s'intègre naturellement</h2>
+        </div>
+        <ul class="bullet-list reveal">
+            <li>Avant une réunion difficile ou un point sécurité sensible.</li>
+            <li>En prévention HSE / QVT pour les équipes terrain.</li>
+            <li>Dans les moments de friction entre équipes ou métiers.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Ce que c'est / ce que ce n'est pas</p>
+            <h2>Une pratique simple, sans posture</h2>
+        </div>
+        <div class="two-columns">
+            <div class="card reveal">
+                <h3>Ce que c'est</h3>
+                <ul>
+                    <li>Un protocole simple et reproductible.</li>
+                    <li>Une régulation corporelle accessible à tous.</li>
+                    <li>Un appui concret pour la qualité relationnelle.</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Ce que ce n'est pas</h3>
+                <ul>
+                    <li>Un cours de sport ou une injonction au bien-être.</li>
+                    <li>Une pratique ésotérique ou hors-sol.</li>
+                    <li>Une solution isolée des enjeux opérationnels.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">Circuit Vital</p>
+            <h2>Mettre en place un pilote</h2>
+            <p>Un format court permet de tester l'impact en conditions réelles.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+    </div>
+</section>
+{% endblock %}
