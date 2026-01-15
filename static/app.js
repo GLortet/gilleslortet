@@ -27,4 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         reveals.forEach((element) => element.classList.add("is-visible"));
     }
+
+    const cookieBanner = document.querySelector(".cookie-banner");
+    const cookieAccept = document.querySelector("[data-cookie-accept]");
+    const hasConsent = document.cookie
+        .split("; ")
+        .some((cookie) => cookie.startsWith("gl_cookie_consent="));
+
+    if (cookieBanner && hasConsent) {
+        cookieBanner.setAttribute("hidden", "hidden");
+    }
+
+    if (cookieBanner && cookieAccept) {
+        cookieAccept.addEventListener("click", () => {
+            document.cookie = "gl_cookie_consent=1; max-age=15552000; path=/; SameSite=Lax";
+            cookieBanner.setAttribute("hidden", "hidden");
+        });
+    }
 });
