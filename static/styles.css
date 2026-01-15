@@ -147,11 +147,18 @@ ul {
 }
 
 .nav-cta {
-    padding: 10px 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 20px;
     border-radius: 999px;
     background: var(--accent);
     color: #fff;
     border: 1px solid var(--accent);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.01em;
 }
 
 .nav-cta:hover,
