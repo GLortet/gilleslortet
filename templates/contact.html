@@ -1,30 +1,56 @@
 {% extends "base.html" %}
 {% set title = "Contact | Gilles Lortet" %}
+{% set page_class = "page-contact" %}
+{% set description = "Demander un échange avec Gilles Lortet pour clarifier vos besoins PCM ou Circuit Vital." %}
 
 {% block content %}
 <section class="page-hero">
     <div class="container">
         <p class="eyebrow">Contact</p>
-        <h1>Un premier échange pour clarifier.</h1>
-        <p class="lead">Vous pouvez décrire votre contexte, vos enjeux et les points de tension. La réponse sera simple, directe et adaptée à vos contraintes.</p>
+        <h1>Demander un échange</h1>
+        <div class="flow measure">
+            <p class="lead">Un premier échange de 30 minutes suffit à clarifier votre contexte et le format le plus adapté.</p>
+        </div>
     </div>
 </section>
 
-<section class="section">
+<section class="section section-divider">
     <div class="container contact-grid">
-        <div class="contact-card">
-            <h2>Par email</h2>
-            <p>Réponse sous quelques jours ouvrés.</p>
-            <p class="contact-detail"><a href="mailto:lortet.gilles@gmail.com">contact@gilleslortet.fr</a></p>
+        <div class="card reveal">
+            <h2>Écrire directement</h2>
+            <p>Réponse rapide, prise de rendez-vous selon vos contraintes.</p>
+            <p class="contact-detail"><a href="mailto:contact@gilleslortet.fr">contact@gilleslortet.fr</a></p>
+            <a class="button" href="mailto:contact@gilleslortet.fr">Demander un échange</a>
         </div>
-        <div class="contact-card">
-            <h2>Informations utiles</h2>
+        <div class="card reveal">
+            <h2>Informations utiles à fournir</h2>
             <ul>
-                <li>Votre rôle et votre structure.</li>
-                <li>Les enjeux relationnels actuels.</li>
-                <li>Le format envisagé (échange court, formation, atelier).</li>
+                <li>Votre rôle et le périmètre concerné.</li>
+                <li>Le contexte (tension, décision, prévention, etc.).</li>
+                <li>Le type de population visée (CODIR, managers, terrain).</li>
+                <li>Le format envisagé (atelier, diagnostic, parcours).</li>
+                <li>Le calendrier souhaité.</li>
             </ul>
         </div>
+        <div class="card reveal">
+            <h2>Ce que vous pouvez attendre</h2>
+            <ul>
+                <li>Un cadre clair et des échanges simples.</li>
+                <li>Des propositions concrètes, adaptées au terrain.</li>
+                <li>Une réponse honnête sur ce qui est pertinent ou non.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">Disponibilité</p>
+            <h2>Basé en France, interventions nationales</h2>
+            <p>Possibilité d'interventions sur site ou en distanciel selon vos contraintes.</p>
+        </div>
+        <a class="button" href="mailto:contact@gilleslortet.fr">Écrire un email</a>
     </div>
 </section>
 {% endblock %}

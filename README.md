@@ -2,14 +2,6 @@
 Site professionnel de Gilles Lortet — formations PCM et Circuit Vital pour dirigeants, RH et HSE.
 
 ## Installation locale
-Site professionnel de Gilles Lortet — Formation et accompagnement en fonctionnement humain (PCM & Circuit Vital).
-
-## Stack
-- Python (Flask)
-- HTML / CSS
-- Hébergement : PythonAnywhere
-
-## Démarrage local
 ```bash
 python -m venv .venv
 source .venv/bin/activate
