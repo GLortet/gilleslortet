@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% set title = "À propos | Gilles Lortet" %}
+{% set description = "Gilles Lortet, formateur certifié PCM et créateur de Circuit Vital. Une approche humaine et terrain pour les environnements exigeants." %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container about-hero">
+        <div>
+            <p class="eyebrow">À propos</p>
+            <h1>Un parcours terrain, une posture simple</h1>
+            <p class="lead">Après une première carrière en environnement opérationnel, je me suis orienté vers la formation et l'accompagnement. Je me suis certifié au Process Communication Model pour apporter un cadre clair aux relations et à la décision.</p>
+        </div>
+        <div class="about-visual reveal">
+            <img src="{{ url_for('static', filename='images/portrait.svg') }}" alt="Portrait de Gilles Lortet" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="eyebrow">Ce qui me guide</p>
+            <h2>Trois valeurs pour rester aligné</h2>
+        </div>
+        <div class="cards">
+            <article class="card reveal">
+                <h3>Sobriété</h3>
+                <p>Aller à l'essentiel, sans posture ni grand discours.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Fiabilité</h3>
+                <p>Tenir un cadre, respecter les engagements et la réalité du terrain.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Humanité</h3>
+                <p>Reconnaître ce que vivent les équipes, même sous forte pression.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft">
+    <div class="container">
+        <div class="section-header">
+            <p class="eyebrow">Certification</p>
+            <h2>PCM et Circuit Vital comme socle commun</h2>
+        </div>
+        <div class="card reveal">
+            <p>PCM apporte une lecture fine des interactions. Circuit Vital ancre la régulation dans le corps. Ensemble, ils créent un langage commun pour durer, sans surenchère.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">Rencontrer</p>
+            <h2>Échanger simplement sur vos enjeux</h2>
+            <p>Un premier appel suffit pour vérifier l'adéquation et le bon format.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+    </div>
+</section>
+{% endblock %}

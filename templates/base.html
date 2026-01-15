@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title if title else "Gilles Lortet | Formation PCM & Circuit Vital" }}</title>
+    <meta name="description" content="{{ description if description else "Formations et accompagnements pour dirigeants, RH et HSE. PCM et Circuit Vital pour clarifier les relations et soutenir la décision." }}">
+    <meta property="og:title" content="{{ title if title else "Gilles Lortet" }}">
+    <meta property="og:description" content="{{ description if description else "Formations et accompagnements pour dirigeants, RH et HSE. PCM et Circuit Vital pour clarifier les relations et soutenir la décision." }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ og_image if og_image else url_for('static', filename='images/hero.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="{{ url_for('home') }}">Gilles Lortet</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+            <nav class="nav" id="primary-nav">
+                <a href="{{ url_for('home') }}">Accueil</a>
+                <a href="{{ url_for('approche') }}">Approche</a>
+                <a href="{{ url_for('pcm') }}">PCM</a>
+                <a href="{{ url_for('circuitvital') }}">Circuit Vital</a>
+                <a href="{{ url_for('a_propos') }}">À propos</a>
+                <a class="nav-cta" href="{{ url_for('contact') }}">Demander un échange</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-title">Gilles Lortet</p>
+                <p>Formations et accompagnements pour dirigeants, RH et HSE. PCM et Circuit Vital.</p>
+            </div>
+            <div>
+                <p class="footer-title">Contact</p>
+                <p><a href="mailto:contact@gilleslortet.fr">contact@gilleslortet.fr</a></p>
+                <p>Basé en France — interventions nationales.</p>
+            </div>
+            <div>
+                <p class="footer-title">Navigation</p>
+                <ul>
+                    <li><a href="{{ url_for('pcm') }}">PCM</a></li>
+                    <li><a href="{{ url_for('circuitvital') }}">Circuit Vital</a></li>
+                    <li><a href="{{ url_for('approche') }}">Approche</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Gilles Lortet. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
