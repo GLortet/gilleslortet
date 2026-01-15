@@ -1,111 +1,67 @@
 {% extends "base.html" %}
-{% set title = "PCM | Process Communication Model" %}
-{% set description = "Comprendre les comportements sous pression et améliorer la communication grâce au Process Communication Model." %}
+{% set title = "Process Communication Model | Gilles Lortet" %}
 
 {% block content %}
 <section class="page-hero">
     <div class="container">
-        <p class="eyebrow">Process Communication Model</p>
-        <h1>PCM, sans jargon</h1>
-        <p class="lead">Le PCM aide à lire les signaux humains en situation de stress, à ajuster la communication et à sécuriser les décisions. C'est un cadre simple, appliqué et durable.</p>
+        <p class="eyebrow">Process Communication Model (PCM)</p>
+        <h1>Comprendre les personnalités pour mieux coopérer.</h1>
+        <p class="lead">PCM apporte un langage commun pour décoder les besoins, les canaux de communication et les réactions sous stress.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <p class="eyebrow">Pourquoi PCM</p>
-            <h2>Comprendre ce qui se joue, avant que ça ne déborde</h2>
+            <h2>Ce que PCM change concrètement</h2>
         </div>
-        <div class="two-columns">
-            <div class="card reveal">
-                <h3>Lecture rapide des comportements</h3>
-                <p>Identifier les besoins psychologiques qui se cachent derrière les réactions sous pression.</p>
+        <div class="list-grid">
+            <div>
+                <h4>Communication claire</h4>
+                <p>Adapter le message à l'interlocuteur pour éviter les malentendus.</p>
             </div>
-            <div class="card reveal">
-                <h3>Outils simples pour décider</h3>
-                <p>Une grille claire pour adapter sa communication, éviter les malentendus et réduire la friction.</p>
+            <div>
+                <h4>Leadership en tension</h4>
+                <p>Identifier les signaux de stress avant qu'ils ne deviennent des conflits.</p>
+            </div>
+            <div>
+                <h4>Décisions plus justes</h4>
+                <p>Prendre en compte les besoins psychologiques sans perdre le cap.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section section-soft">
+<section class="section alt">
     <div class="container">
         <div class="section-header">
-            <p class="eyebrow">Sous pression</p>
-            <h2>Ce qui change quand la tension monte</h2>
+            <h2>Formats possibles</h2>
+            <p>La formation PCM peut être intégrée à des parcours courts ou à des cycles plus longs selon vos contraintes.</p>
         </div>
-        <ul class="bullet-list reveal">
-            <li>Les messages se raccourcissent, les interprétations s'accélèrent.</li>
-            <li>Les styles de décision se crispent et s'opposent.</li>
-            <li>Les équipes confondent urgence et précipitation.</li>
-            <li>La coopération se fragilise, même entre experts solides.</li>
-        </ul>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <p class="eyebrow">Formats PCM</p>
-            <h2>Des formats adaptés aux instances dirigeantes et au terrain</h2>
-        </div>
-        <div class="cards format-grid">
-            <article class="card reveal">
-                <h3>CODIR / COMEX</h3>
-                <p class="card-meta">½ journée à 1 jour</p>
-                <p>Clarifier les styles de décision, sécuriser la communication en période de tension.</p>
+        <div class="cards">
+            <article class="card">
+                <h3>Comité de direction</h3>
+                <p>Aligner les modes de décision et fluidifier les échanges stratégiques.</p>
             </article>
-            <article class="card reveal">
-                <h3>Managers</h3>
-                <p class="card-meta">1 à 2 jours</p>
-                <p>Lire les signaux faibles, prévenir les escalades, gérer les échanges difficiles.</p>
+            <article class="card">
+                <h3>Managers et encadrement</h3>
+                <p>Outiller les responsables pour prévenir l'usure relationnelle.</p>
             </article>
-            <article class="card reveal">
-                <h3>Équipes terrain</h3>
-                <p class="card-meta">Ateliers courts</p>
-                <p>Créer un langage commun pour gérer les conflits et maintenir la coopération.</p>
+            <article class="card">
+                <h3>Equipes opérationnelles</h3>
+                <p>Renforcer la coopération sur le terrain.</p>
             </article>
-        </div>
-    </div>
-</section>
-
-<section class="section section-soft">
-    <div class="container">
-        <div class="section-header">
-            <p class="eyebrow">FAQ</p>
-            <h2>Questions fréquentes</h2>
-        </div>
-        <div class="faq-grid reveal">
-            <details>
-                <summary>PCM, c'est un test de personnalité ?</summary>
-                <p>Non. C'est un modèle de communication qui aide à comprendre comment chacun fonctionne sous pression.</p>
-            </details>
-            <details>
-                <summary>Est-ce applicable sur le terrain industriel ?</summary>
-                <p>Oui, le PCM est utilisé dans des environnements exigeants où la clarté des échanges est vitale.</p>
-            </details>
-            <details>
-                <summary>Combien de temps faut-il pour voir des effets ?</summary>
-                <p>Dès les premiers ateliers, les équipes gagnent un vocabulaire commun pour désamorcer les tensions.</p>
-            </details>
-            <details>
-                <summary>Peut-on le combiner avec Circuit Vital ?</summary>
-                <p>Oui. PCM clarifie les interactions, Circuit Vital régule la tension corporelle. Les deux se renforcent.</p>
-            </details>
         </div>
     </div>
 </section>
 
 <section class="section">
-    <div class="container callout reveal">
+    <div class="container callout">
         <div>
-            <p class="eyebrow">PCM</p>
-            <h2>Voir le format qui vous correspond</h2>
-            <p>Un échange rapide suffit pour cadrer le bon niveau d'intervention.</p>
+            <h2>PCM comme base commune</h2>
+            <p>PCM sert souvent de cadre partagé. Circuit Vital vient compléter la régulation des tensions quand le corps est sollicité.</p>
         </div>
-        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+        <a class="button" href="{{ url_for('contact') }}">Échanger sur votre contexte</a>
     </div>
 </section>
 {% endblock %}

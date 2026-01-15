@@ -1,84 +1,67 @@
 {% extends "base.html" %}
-{% set title = "Circuit Vital | Routine corporelle" %}
-{% set description = "Circuit Vital : une routine de 5 à 10 minutes pour réguler la tension, prévenir l'usure et maintenir la qualité relationnelle." %}
+{% set title = "Circuit Vital | Gilles Lortet" %}
 
 {% block content %}
 <section class="page-hero">
     <div class="container">
         <p class="eyebrow">Circuit Vital</p>
-        <h1>Une routine simple pour réguler la tension</h1>
-        <p class="lead">Circuit Vital est une pratique corporelle courte, accessible à tous, pensée pour les contextes où la pression est quotidienne. 5 à 10 minutes suffisent pour retrouver un état plus stable.</p>
+        <h1>Réguler les tensions par le corps, simplement.</h1>
+        <p class="lead">Circuit Vital est une pratique courte, accessible, qui aide à relâcher les tensions et à retrouver de la présence avant une réunion, une intervention ou un moment sensible.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <p class="eyebrow">Pourquoi ça marche</p>
-            <h2>Quand le corps se relâche, la communication s'apaise</h2>
+            <h2>Pourquoi cette approche ?</h2>
         </div>
-        <div class="two-columns">
-            <div class="card reveal">
-                <h3>Une routine courte</h3>
-                <p>Facile à intégrer entre deux réunions, sur un poste de travail ou en atelier.</p>
+        <div class="list-grid">
+            <div>
+                <h4>Prévention</h4>
+                <p>Réduire l'accumulation de stress avant qu'elle n'impacte la relation.</p>
             </div>
-            <div class="card reveal">
-                <h3>Un effet immédiat</h3>
-                <p>On observe un retour au calme plus rapide et une meilleure capacité d'écoute.</p>
+            <div>
+                <h4>Sobriété</h4>
+                <p>Un protocole simple, sans matériel, réalisable partout.</p>
+            </div>
+            <div>
+                <h4>Terrain</h4>
+                <p>Conçu pour les équipes exposées et les environnements opérationnels.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section section-soft">
+<section class="section alt">
     <div class="container">
         <div class="section-header">
-            <p class="eyebrow">Cas d'usage</p>
-            <h2>Où Circuit Vital s'intègre naturellement</h2>
+            <h2>Intégration avec PCM</h2>
+            <p>La communication se clarifie quand la tension baisse. Circuit Vital complète PCM en agissant directement sur la régulation.</p>
         </div>
-        <ul class="bullet-list reveal">
-            <li>Avant une réunion difficile ou un point sécurité sensible.</li>
-            <li>En prévention HSE / QVT pour les équipes terrain.</li>
-            <li>Dans les moments de friction entre équipes ou métiers.</li>
-        </ul>
+        <div class="cards">
+            <article class="card">
+                <h3>Avant un échange difficile</h3>
+                <p>Créer les conditions d'une discussion plus posée.</p>
+            </article>
+            <article class="card">
+                <h3>Dans une démarche HSE</h3>
+                <p>Renforcer les pratiques de prévention avec un geste concret.</p>
+            </article>
+            <article class="card">
+                <h3>En accompagnement d'équipe</h3>
+                <p>Soutenir la cohésion quand la pression est forte.</p>
+            </article>
+        </div>
     </div>
 </section>
 
 <section class="section">
-    <div class="container">
-        <div class="section-header">
-            <p class="eyebrow">Ce que c'est / ce que ce n'est pas</p>
-            <h2>Une pratique simple, sans posture</h2>
-        </div>
-        <div class="two-columns">
-            <div class="card reveal">
-                <h3>Ce que c'est</h3>
-                <ul>
-                    <li>Un protocole simple et reproductible.</li>
-                    <li>Une régulation corporelle accessible à tous.</li>
-                    <li>Un appui concret pour la qualité relationnelle.</li>
-                </ul>
-            </div>
-            <div class="card reveal">
-                <h3>Ce que ce n'est pas</h3>
-                <ul>
-                    <li>Un cours de sport ou une injonction au bien-être.</li>
-                    <li>Une pratique ésotérique ou hors-sol.</li>
-                    <li>Une solution isolée des enjeux opérationnels.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section section-soft">
-    <div class="container callout reveal">
+    <div class="container callout">
         <div>
-            <p class="eyebrow">Circuit Vital</p>
-            <h2>Mettre en place un pilote</h2>
-            <p>Un format court permet de tester l'impact en conditions réelles.</p>
+            <h2>Vous souhaitez tester ?</h2>
+            <p>Un atelier court permet d'évaluer la pertinence du protocole pour vos équipes.</p>
         </div>
-        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+        <a class="button" href="{{ url_for('contact') }}">Nous contacter</a>
     </div>
 </section>
 {% endblock %}
