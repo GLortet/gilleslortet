@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% set title = "Approche | Gilles Lortet" %}
+{% set page_class = "page-approche" %}
+{% set description = "Une approche sobre, humaine et structurée pour des environnements exigeants. PCM et Circuit Vital comme socle commun." %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Approche</p>
+        <h1>Une posture claire, un cadre solide</h1>
+        <div class="flow measure">
+            <p class="lead">Je travaille avec des dirigeants et des équipes qui n'ont pas de temps à perdre.</p>
+            <p class="lead">Le cadre est précis, les objectifs sont concrets, l'humain reste central.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Principes</p>
+            <h2>Ce qui guide chaque intervention</h2>
+        </div>
+        <div class="cards">
+            <article class="card reveal">
+                <h3>Clarté des rôles</h3>
+                <p>Chacun sait pourquoi il est là, ce qu'il apporte et ce qu'il doit décider.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Terrain d'abord</h3>
+                <p>Les outils s'adaptent aux contraintes opérationnelles, pas l'inverse.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Rythme réaliste</h3>
+                <p>Des formats courts, des points d'étape, et des actions mesurables.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Déroulé</p>
+            <h2>Comment une intervention se déroule</h2>
+        </div>
+        <ol class="step-list reveal">
+            <li>
+                <strong>Échange initial.</strong>
+                <span>Clarifier le contexte, les acteurs, les tensions et les attentes.</span>
+            </li>
+            <li>
+                <strong>Diagnostic ciblé.</strong>
+                <span>Entretiens courts, observation terrain, points de friction.</span>
+            </li>
+            <li>
+                <strong>Intervention.</strong>
+                <span>PCM, Circuit Vital, ou mix selon les enjeux identifiés.</span>
+            </li>
+            <li>
+                <strong>Ancrage.</strong>
+                <span>Routines simples, relais internes, points de suivi.</span>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Ce que je refuse</p>
+            <h2>Une posture claire pour éviter les faux-semblants</h2>
+        </div>
+        <div class="card reveal flow">
+            <p>Je ne vends pas de promesses magiques.</p>
+            <p>Je ne pousse pas des discours hors-sol.</p>
+            <p>Et je n'impose pas d'outils qui ne tiennent pas face au terrain.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">Un échange</p>
+            <h2>Prendre 30 minutes pour clarifier</h2>
+            <p>Un premier échange suffit souvent à définir le bon format d'intervention.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+    </div>
+</section>
+{% endblock %}
