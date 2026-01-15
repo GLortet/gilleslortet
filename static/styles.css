@@ -114,6 +114,17 @@ ul {
     color: var(--accent);
 }
 
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.site-logo img {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
 .nav {
     display: flex;
     align-items: center;
