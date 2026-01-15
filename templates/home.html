@@ -1,153 +1,80 @@
 {% extends "base.html" %}
-{% set title = "Gilles Lortet | Formations PCM & Circuit Vital" %}
-{% set description = "Formateur certifié PCM et créateur de Circuit Vital. Un accompagnement sobre, humain et exigeant pour dirigeants, RH et HSE." %}
+{% set title = "Gilles Lortet | Formation et accompagnement humain" %}
 
 {% block content %}
 <section class="hero">
     <div class="container hero-grid">
-        <div class="hero-copy stack">
-            <p class="eyebrow">Formation PCM • Circuit Vital • Interventions terrain</p>
-            <h1>Des équipes lucides sous pression.</h1>
-            <div class="flow measure">
-                <p class="lead">J'accompagne dirigeants, RH et HSE à clarifier les tensions relationnelles et à soutenir la décision.</p>
-                <p class="lead">Une approche simple, humaine, ancrée dans le réel.</p>
-            </div>
+        <div>
+            <p class="eyebrow">Formateur certifié Process Communication Model (PCM) • Créateur de Circuit Vital</p>
+            <h1>Clarifier les relations, apaiser les tensions, soutenir la décision.</h1>
+            <p class="lead">Un accompagnement sobre et exigeant pour les dirigeants, RH et responsables HSE qui veulent retrouver de la qualité relationnelle, sans posture ni jargon.</p>
             <div class="hero-actions">
-                <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
-                <a class="button button-secondary" href="#formats">Voir les formats</a>
-            </div>
-            <div class="proofs">
-                <div>
-                    <p class="proof-title">Publics</p>
-                    <p>Dirigeants, CODIR, RH, HSE, managers terrain</p>
-                </div>
-                <div>
-                    <p class="proof-title">Périmètre</p>
-                    <p>Interventions France, multisites</p>
-                </div>
-                <div>
-                    <p class="proof-title">Contexte</p>
-                    <p>Industrie, opérations, environnements exigeants</p>
-                </div>
+                <a class="button" href="{{ url_for('contact') }}">Entrer en contact</a>
+                <a class="button button-ghost" href="{{ url_for('approche') }}">Découvrir l'approche</a>
             </div>
         </div>
-        <div class="hero-visual reveal stack">
-            <div class="hero-media" aria-hidden="true"></div>
-            <p class="micro-story">« Sur un site multi-équipes, un quart d'heure de PCM a suffi pour remettre les échanges au calme. »</p>
-        </div>
-    </div>
-</section>
-
-<section class="section section-soft" id="entrees">
-    <div class="container">
-        <div class="section-header flow measure">
-            <p class="eyebrow">Deux portes d'entrée</p>
-            <h2>Un même socle humain</h2>
-            <p>PCM et Circuit Vital répondent à des besoins différents.</p>
-            <p>Ils se rejoignent sur un même socle : mieux communiquer quand la tension monte, préserver l'énergie collective et décider sans s'épuiser.</p>
-        </div>
-        <div class="cards">
-            <article class="card reveal">
-                <h3>Process Communication Model (PCM)</h3>
-                <p>Une lecture claire des comportements et des besoins psychologiques pour ajuster la communication, éviter les malentendus et sécuriser les décisions.</p>
-                <a class="text-link" href="{{ url_for('pcm') }}">Découvrir PCM</a>
-            </article>
-            <article class="card reveal">
-                <h3>Circuit Vital</h3>
-                <p>Une routine corporelle de 5 à 10 minutes pour prévenir l'usure, réguler la tension et remettre du calme dans les équipes terrain.</p>
-                <a class="text-link" href="{{ url_for('circuitvital') }}">Découvrir Circuit Vital</a>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="formats">
-    <div class="container">
-        <div class="section-header flow measure">
-            <p class="eyebrow">Formats</p>
-            <h2>Des interventions claires, cadrées, adaptées à votre rythme</h2>
-            <p>Trois formats pour entrer dans la relation, sécuriser les échanges et installer des repères durables.</p>
-        </div>
-        <div class="cards format-grid">
-            <article class="card reveal">
-                <h3>Diagnostic terrain</h3>
-                <p class="card-meta">Pour CODIR, RH, HSE</p>
-                <ul>
-                    <li>Durée : 1 à 2 jours</li>
-                    <li>Entretiens ciblés + observation</li>
-                    <li>Livrable : synthèse claire + priorités</li>
-                </ul>
-            </article>
-            <article class="card reveal">
-                <h3>Atelier ciblé</h3>
-                <p class="card-meta">Managers, équipes projet</p>
-                <ul>
-                    <li>Durée : 0,5 à 1 jour</li>
-                    <li>PCM ou Circuit Vital selon enjeux</li>
-                    <li>Livrable : plan d'action opérationnel</li>
-                </ul>
-            </article>
-            <article class="card reveal">
-                <h3>Parcours d'ancrage</h3>
-                <p class="card-meta">Équipes multi-sites</p>
-                <ul>
-                    <li>Durée : 3 à 6 mois</li>
-                    <li>Sessions courtes + terrain</li>
-                    <li>Livrable : routines et référents</li>
-                </ul>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="section section-soft">
-    <div class="container">
-        <div class="section-header flow measure">
-            <p class="eyebrow">Ce que vous obtenez</p>
-            <h2>Des effets concrets, sans effets de manche</h2>
-        </div>
-        <div class="two-columns">
-            <ul class="bullet-list reveal">
-                <li>Des échanges plus clairs en situations tendues.</li>
-                <li>Des décisions mieux partagées, moins contestées.</li>
-                <li>Des managers outillés pour relire les signaux faibles.</li>
-                <li>Des routines simples qui tiennent dans la durée.</li>
+        <div class="hero-card">
+            <h2>Ce que vous cherchez sans le dire</h2>
+            <ul>
+                <li>Un espace pour poser les tensions et clarifier les enjeux humains.</li>
+                <li>Des repères simples pour agir sous pression.</li>
+                <li>Une méthode qui respecte le terrain et les personnes.</li>
             </ul>
-            <div class="micro-stories reveal">
-                <p>« Après une réunion difficile, une équipe HSE a repris le dialogue en 20 minutes. »</p>
-                <p>« Sur une phase de maintenance, un geste Circuit Vital a évité l'escalade. »</p>
-            </div>
         </div>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <div class="section-header flow measure">
-            <p class="eyebrow">Témoignages</p>
-            <h2>Ce qui revient le plus souvent</h2>
+        <div class="section-header">
+            <h2>Deux portes d'entrée, un même socle humain</h2>
+            <p>PCM et Circuit Vital répondent à des besoins différents, mais se rejoignent sur une même conviction : la relation se travaille avec clarté, et la régulation passe aussi par le corps.</p>
         </div>
         <div class="cards">
-            <article class="card testimonial reveal">
-                <p>« Enfin un cadre simple pour parler vrai. Nous avons gagné en clarté sans perdre la rigueur opérationnelle. »</p>
-                <p class="card-meta">Directeur de site industriel</p>
+            <article class="card">
+                <h3>Process Communication Model (PCM)</h3>
+                <p>Une lecture précise des personnalités, des modes de communication et des réactions sous stress. Pour décider, manager et coopérer avec plus de justesse.</p>
+                <a class="text-link" href="{{ url_for('pcm') }}">Voir la page PCM</a>
             </article>
-            <article class="card testimonial reveal">
-                <p>« L'approche PCM a permis de relire les tensions, pas de les juger. Les échanges sont repartis sur des bases saines. »</p>
-                <p class="card-meta">Responsable RH</p>
+            <article class="card">
+                <h3>Circuit Vital</h3>
+                <p>Une pratique corporelle simple, dix minutes, pour prévenir la surcharge et restaurer l'énergie relationnelle. Adaptée aux contextes HSE et aux équipes.</p>
+                <a class="text-link" href="{{ url_for('circuitvital') }}">Voir Circuit Vital</a>
             </article>
         </div>
     </div>
 </section>
 
-<section class="section section-soft">
-    <div class="container callout reveal">
-        <div>
-            <p class="eyebrow">Prendre contact</p>
-            <h2>Un premier échange pour cadrer vos enjeux</h2>
-            <p>Nous clarifions ensemble le contexte, les acteurs clés et le format le plus pertinent.</p>
+<section class="section alt">
+    <div class="container">
+        <div class="section-header">
+            <h2>Une posture claire</h2>
+            <p>Ni coaching inspirationnel, ni discours marketing. Un accompagnement incarné, issu du terrain, pour des environnements exigeants.</p>
         </div>
-        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+        <div class="list-grid">
+            <div>
+                <h4>Clarté relationnelle</h4>
+                <p>Rendre lisibles les dynamiques humaines pour agir vite et bien.</p>
+            </div>
+            <div>
+                <h4>Décision sous pression</h4>
+                <p>Stabiliser les échanges quand la tension monte.</p>
+            </div>
+            <div>
+                <h4>Prévention durable</h4>
+                <p>Réduire l'usure relationnelle avant qu'elle ne devienne un risque.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container callout">
+        <div>
+            <h2>Vous souhaitez échanger ?</h2>
+            <p>Un premier échange permet de clarifier le contexte, les attentes et les prochaines étapes.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Prendre contact</a>
     </div>
 </section>
 {% endblock %}
