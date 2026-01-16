@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% set title = "PCM | Process Communication Model" %}
+{% set page_class = "page-pcm" %}
+{% set description = "Comprendre les comportements sous pression et améliorer la communication grâce au Process Communication Model." %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Process Communication Model</p>
+        <h1>Se connecter avec le meilleur de chacun, dans le travail réel.</h1>
+        <div class="flow measure">
+            <p class="lead">Un cadre clair pour mieux se comprendre quand la tension monte.</p>
+            <p class="lead">Deux formats, concrets et applicables dès la première journée.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">À quoi sert PCM ici</p>
+            <h2>Clarifier les échanges, dans les situations qui comptent</h2>
+        </div>
+        <ul class="bullet-list reveal">
+            <li>Tensions relationnelles qui ralentissent les décisions.</li>
+            <li>Coopération fragile entre métiers, sites ou niveaux hiérarchiques.</li>
+            <li>Communication sous pression, quand tout va vite.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Formats</p>
+            <h2>Deux formats clairs, un même cadre</h2>
+        </div>
+        <div class="cards format-grid">
+            <article class="card reveal">
+                <h3>Découvrir PCM</h3>
+                <p class="card-meta">1 jour</p>
+                <ul>
+                    <li>Historique PCM (bref).</li>
+                    <li>Structure Base / Phase.</li>
+                    <li>6 types : perceptions, points forts, besoins psychologiques, comportements sous stress.</li>
+                    <li>Autodiagnostic + remise des profils.</li>
+                    <li>Mise en pratique sur les perceptions.</li>
+                </ul>
+                <p>Une journée suffit déjà pour repartir avec des repères concrets.</p>
+            </article>
+            <article class="card reveal">
+                <h3>Approfondir PCM</h3>
+                <p class="card-meta">2 jours</p>
+                <ul>
+                    <li>Partie personnalité.</li>
+                    <li>Canaux.</li>
+                    <li>Atelier “jeux de la star”.</li>
+                    <li>Atelier ascenseur.</li>
+                    <li>Besoins psychologiques (approfondissement).</li>
+                    <li>Comportements sous stress : comment les éviter, comment y répondre.</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Ce que ça permet</p>
+            <h2>Un cadre pour mieux décider et mieux travailler</h2>
+        </div>
+        <ul class="bullet-list reveal">
+            <li>Un vocabulaire commun pour relire les tensions.</li>
+            <li>Des repères pour ajuster la communication.</li>
+            <li>Une lecture plus claire des besoins psychologiques.</li>
+            <li>Une base pour travailler les comportements sous stress.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Ce que je refuse</p>
+            <h2>Un cadre simple, loin des promesses faciles</h2>
+        </div>
+        <div class="card reveal flow">
+            <p>Je ne vends pas des promesses magiques.</p>
+            <p>Je ne fais pas du PCM “hors-sol”.</p>
+            <p>Je n'empile pas des concepts : l'objectif est l'usage dans le travail réel.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">PCM</p>
+            <h2>Demander un échange (30 min)</h2>
+            <p>Un échange rapide permet de cadrer le bon format.</p>
+        </div>
+        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+    </div>
+</section>
+{% endblock %}
