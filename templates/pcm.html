@@ -10,6 +10,7 @@
         <h1>Se connecter avec le meilleur de chacun, dans le travail réel.</h1>
         <div class="flow measure">
             <p class="lead">Un cadre clair pour mieux se comprendre quand la tension monte.</p>
+            <p class="lead">Quand la pression monte, la communication devient un enjeu opérationnel.</p>
             <p class="lead">Deux formats, concrets et applicables dès la première journée.</p>
         </div>
     </div>
@@ -29,7 +30,7 @@
     </div>
 </section>
 
-<section class="section section-divider section-soft pcm-showcase">
+<section class="section section-divider section-soft pcm-showcase section-alt">
     <div class="container">
         <div class="pcm-showcase-header">
             <div class="section-header flow measure">
@@ -38,8 +39,8 @@
                 <p>Faites défiler. Cliquez pour agrandir. Téléchargez la version complète.</p>
             </div>
             <div class="pcm-showcase-actions">
-                <a class="button button-secondary" href="{{ url_for('static', filename='docs/brochure-pcm.pdf') }}" target="_blank" rel="noopener" aria-label="Télécharger la brochure PCM">Télécharger la brochure</a>
-                <a class="button" href="{{ url_for('contact') }}" aria-label="Demander un échange">Demander un échange</a>
+                <a class="button button-secondary" id="pcm-download-brochure" href="{{ url_for('static', filename='docs/brochure-pcm.pdf') }}" target="_blank" rel="noopener" aria-label="Télécharger la brochure PCM">Télécharger la brochure</a>
+                <a class="button" id="pcm-request-call" href="{{ url_for('contact') }}" aria-label="Demander un échange">Demander un échange</a>
             </div>
         </div>
 
@@ -104,7 +105,7 @@
     </div>
 </section>
 
-<section class="section section-soft section-divider pcm-formats">
+<section class="section section-soft section-divider pcm-formats section-alt">
     <div class="container">
         <div class="section-header flow measure">
             <p class="eyebrow">PARCOURS</p>
@@ -194,14 +195,14 @@
     </div>
 </section>
 
-<section class="section section-divider">
+<section class="section section-divider section-alt">
     <div class="container callout reveal">
         <div>
             <p class="eyebrow">PCM</p>
             <h2>Demander un échange (30 min)</h2>
             <p>Un échange rapide permet de cadrer le bon format.</p>
         </div>
-        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+        <a class="button" id="pcm-request-call-bottom" href="{{ url_for('contact') }}">Demander un échange</a>
     </div>
 </section>
 {% endblock %}
