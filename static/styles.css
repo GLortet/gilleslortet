@@ -201,6 +201,11 @@ main {
     height: 48px;
 }
 
+/* Force la couleur du texte du CTA dans le header */
+.site-header .cta--header {
+  color: #fff;
+}
+
 .hero {
     padding: var(--space-7) 0 var(--space-6);
 }
