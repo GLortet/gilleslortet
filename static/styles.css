@@ -163,7 +163,7 @@ ul {
 
 .cta--header {
     background: var(--accent-soft);
-    color: var(--accent);
+    color: #fff;
     border-color: rgba(31, 78, 95, 0.25);
 }
 
