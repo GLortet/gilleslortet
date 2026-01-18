@@ -563,6 +563,17 @@ main {
     letter-spacing: -0.01em;
 }
 
+.page-pcm .section-title-reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.page-pcm .section-title-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .page-pcm .lead,
 .page-pcm .section-header p {
     color: var(--muted);

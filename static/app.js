@@ -28,6 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
         reveals.forEach((element) => element.classList.add("is-visible"));
     }
 
+    const sectionTitles = document.querySelectorAll(".section-title-reveal");
+    if (sectionTitles.length > 0 && "IntersectionObserver" in window) {
+        const titleObserver = new IntersectionObserver(
+            (entries, currentObserver) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        currentObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.4 }
+        );
+
+        sectionTitles.forEach((title) => titleObserver.observe(title));
+    } else {
+        sectionTitles.forEach((title) => title.classList.add("is-visible"));
+    }
+
     const cookieBanner = document.querySelector(".cookie-banner");
     const cookieAccept = document.querySelector("[data-cookie-accept]");
     const hasConsent = document.cookie
