@@ -104,14 +104,19 @@
     </div>
 </section>
 
-<section class="section section-soft section-divider">
+<section class="section section-soft section-divider pcm-formats">
     <div class="container">
         <div class="section-header flow measure">
-            <p class="eyebrow">Formats</p>
-            <h2>Des formats PCM progressifs, ancrés dans la pratique</h2>
+            <p class="eyebrow">PARCOURS</p>
+            <h2>Un parcours progressif, du premier déclic au niveau complet</h2>
+            <p>Commencez par valider le modèle, puis installez un langage commun, puis passez au niveau complet (PCM1).</p>
         </div>
         <div class="cards format-grid">
             <article class="card reveal">
+                <div class="pcm-format-step">
+                    <span class="pcm-format-step-number">01</span>
+                    <span class="pcm-format-step-label">Étape 1</span>
+                </div>
                 <h3>Débrief de profil PCM</h3>
                 <p class="card-meta">Durée : 1h30 à 2h</p>
                 <ul>
@@ -121,8 +126,14 @@
                     <li>Repérage des comportements sous stress</li>
                     <li>Clés concrètes pour ajuster sa communication</li>
                 </ul>
+                <a class="text-link" href="{{ url_for('contact') }}">Voir si c’est adapté</a>
             </article>
-            <article class="card reveal">
+            <article class="card reveal pcm-format-featured">
+                <div class="pcm-format-step">
+                    <span class="pcm-format-step-number">02</span>
+                    <span class="pcm-format-step-label">Étape 2</span>
+                </div>
+                <span class="pcm-format-badge">Offre phare</span>
                 <h3>Découvrir le PCM</h3>
                 <p class="card-meta">Durée : 1 à 2 jours</p>
                 <ul>
@@ -133,8 +144,13 @@
                     <li>Premiers repères sur les comportements sous stress</li>
                     <li>Mises en situation et exercices pratiques</li>
                 </ul>
+                <a class="text-link" href="{{ url_for('contact') }}">Recommandé pour démarrer</a>
             </article>
             <article class="card reveal">
+                <div class="pcm-format-step">
+                    <span class="pcm-format-step-number">03</span>
+                    <span class="pcm-format-step-label">Étape 3</span>
+                </div>
                 <h3>Approfondir le PCM</h3>
                 <p class="card-meta">Durée : 3 à 4 jours</p>
                 <ul>
@@ -144,10 +160,10 @@
                     <li>Comportements sous stress : prévention et sortie de stress</li>
                     <li>Ateliers pratiques et situations terrain</li>
                 </ul>
+                <a class="text-link" href="{{ url_for('contact') }}">Voir si c’est adapté</a>
             </article>
         </div>
-        <p>Les formats PCM sont modulables.</p>
-        <p>La durée et le contenu s’adaptent au niveau de connaissance, aux enjeux terrain et au degré de pratique souhaité.</p>
+        <p class="pcm-format-note">Chaque format est modulable. La durée et le contenu s’adaptent à vos enjeux terrain et à votre niveau de pratique.</p>
     </div>
 </section>
 
