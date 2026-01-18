@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720">
+  <rect width="600" height="720" fill="#f4f3ee"/>
+  <rect x="60" y="80" width="480" height="560" rx="32" fill="#ffffff" stroke="#d6d6cf" stroke-width="2"/>
+  <g fill="#1f4e5f" font-family="Arial, sans-serif">
+    <text x="140" y="250" font-size="28" font-weight="600">Portrait</text>
+    <text x="140" y="300" font-size="18">Espace réservé</text>
+    <text x="140" y="340" font-size="18">Photo sobre &amp; humaine</text>
+  </g>
+  <circle cx="300" cy="430" r="90" fill="#1f4e5f" opacity="0.12"/>
+</svg>
