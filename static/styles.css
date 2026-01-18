@@ -346,6 +346,34 @@ main {
     transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 
+/* Bloc impact chiffré – accueil */
+.impact-statement {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px 28px;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+    max-width: 520px;
+}
+
+.impact-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    margin: 0;
+}
+
+.impact-text strong {
+    color: var(--accent); /* ton vert */
+    font-weight: 600;
+}
+
+.impact-source {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
 @media (hover: hover) {
     .page-home .cards .card:hover {
         box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
