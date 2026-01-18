@@ -76,6 +76,69 @@
     </div>
 </section>
 
+<section class="section section-divider section-soft pcm-showcase">
+    <div class="container">
+        <div class="pcm-showcase-header">
+            <div class="section-header flow measure">
+                <p class="eyebrow">APERÇU</p>
+                <h2>5 pages pour comprendre l’approche, en 20 secondes</h2>
+                <p>Faites défiler. Cliquez pour agrandir. Téléchargez la version complète.</p>
+            </div>
+            <div class="pcm-showcase-actions">
+                <a class="button button-secondary" href="{{ url_for('static', filename='docs/brochure-pcm.pdf') }}" target="_blank" rel="noopener" aria-label="Télécharger la brochure PCM">Télécharger la brochure</a>
+                <a class="button" href="{{ url_for('contact') }}" aria-label="Demander un échange">Demander un échange</a>
+            </div>
+        </div>
+
+        <div class="pcm-showcase-viewer">
+            <button class="pcm-showcase-arrow" type="button" data-showcase-prev aria-label="Voir la page précédente">←</button>
+            <div class="pcm-showcase-track" data-showcase-track>
+                <figure class="pcm-showcase-slide is-active" data-index="0">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-1.png') }}" alt="Brochure PCM page 1" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="1">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-2.png') }}" alt="Brochure PCM page 2" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="2">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-3.png') }}" alt="Brochure PCM page 3" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="3">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-4.png') }}" alt="Brochure PCM page 4" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="4">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-5.png') }}" alt="Brochure PCM page 5" loading="lazy" width="1200" height="900">
+                </figure>
+            </div>
+            <button class="pcm-showcase-arrow" type="button" data-showcase-next aria-label="Voir la page suivante">→</button>
+        </div>
+
+        <div class="pcm-showcase-thumbs" data-showcase-thumbs>
+            <button class="pcm-showcase-thumb is-active" type="button" data-index="0" aria-label="Voir la page 1">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-1.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="1" aria-label="Voir la page 2">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-2.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="2" aria-label="Voir la page 3">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-3.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="3" aria-label="Voir la page 4">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-4.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="4" aria-label="Voir la page 5">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-5.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+        </div>
+    </div>
+
+    <div class="pcm-showcase-lightbox" data-showcase-lightbox aria-hidden="true" role="dialog" aria-label="Aperçu brochure PCM">
+        <div class="pcm-showcase-lightbox-inner">
+            <button class="pcm-showcase-lightbox-close" type="button" data-showcase-close aria-label="Fermer l’aperçu">Fermer</button>
+            <img class="pcm-showcase-lightbox-image" src="" alt="" width="1400" height="1000">
+        </div>
+    </div>
+</section>
+
 <section class="section section-divider">
     <div class="container">
         <div class="section-header flow measure">
