@@ -539,6 +539,52 @@ main {
     background: rgba(17, 24, 39, 0.02);
 }
 
+.page-pcm .page-hero {
+    padding: calc(var(--space-7) + 8px) 0 var(--space-6);
+}
+
+.page-pcm .pcm-major {
+    padding: calc(var(--space-7) + 4px) 0;
+}
+
+.page-pcm .pcm-compact {
+    padding: var(--space-5) 0;
+}
+
+.page-pcm .section-header {
+    margin-bottom: var(--space-5);
+}
+
+.page-pcm .pcm-compact .section-header {
+    margin-bottom: var(--space-3);
+}
+
+.page-pcm .section-header h2 {
+    letter-spacing: -0.01em;
+}
+
+.page-pcm .lead,
+.page-pcm .section-header p {
+    color: var(--muted);
+}
+
+.page-pcm .button {
+    padding: 14px 26px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.page-pcm .button:hover,
+.page-pcm .button:focus {
+    box-shadow: 0 10px 20px rgba(17, 24, 39, 0.12);
+    transform: translateY(-1px);
+}
+
+.page-pcm .callout {
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 24px rgba(17, 24, 39, 0.08);
+}
+
 .pcm-formats .format-grid {
     position: relative;
     padding-top: var(--space-4);
@@ -622,6 +668,17 @@ main {
         border-color: var(--accent-soft);
         transform: translateY(-2px);
     }
+}
+
+.page-pcm .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-pcm .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 .pcm-format-note {
     margin-top: var(--space-3);
