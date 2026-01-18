@@ -150,17 +150,10 @@ ul {
     border-color: rgba(17, 24, 39, 0.3);
 }
 
-.nav-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.cta {
     min-height: 46px;
     padding: 10px 22px;
     border-radius: 10px;
-    background: var(--accent);
-    color: #ffffff;
-    border: 1px solid var(--accent);
-    font-weight: 600;
     line-height: 1;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -168,11 +161,17 @@ ul {
         box-shadow 0.4s ease;
 }
 
-.nav-cta:hover,
-.nav-cta:focus {
-    background: var(--accent-dark);
-    border-color: var(--accent-dark);
-    box-shadow: 0 10px 20px rgba(17, 24, 39, 0.12);
+.cta--header {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-color: rgba(31, 78, 95, 0.25);
+}
+
+.cta--header:hover,
+.cta--header:focus {
+    background: rgba(31, 78, 95, 0.12);
+    border-color: rgba(31, 78, 95, 0.4);
+    box-shadow: 0 10px 20px rgba(17, 24, 39, 0.08);
     transform: translateY(-1px);
 }
 
@@ -232,7 +231,8 @@ main {
     margin-top: var(--space-3);
 }
 
-.button {
+.button,
+.cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -246,7 +246,9 @@ main {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.cta:hover,
+.cta:focus {
     background: var(--accent-dark);
     border-color: var(--accent-dark);
     transform: translateY(-1px);
@@ -263,7 +265,8 @@ main {
     border-color: var(--accent);
 }
 
-.eyebrow {
+.eyebrow,
+.section-kicker {
     font-size: 13px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
