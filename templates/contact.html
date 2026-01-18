@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% set title = "Contact | Gilles Lortet" %}
+{% set page_class = "page-contact" %}
+{% set description = "Demander un échange avec Gilles Lortet pour clarifier vos besoins PCM ou Circuit Vital." %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Demander un échange</h1>
+        <div class="flow measure">
+            <p class="lead">Un premier échange de 30 minutes suffit à clarifier votre contexte et le format le plus adapté.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider">
+    <div class="container contact-grid">
+        <div class="card reveal">
+            <h2>Écrire directement</h2>
+            <p>Réponse rapide, prise de rendez-vous selon vos contraintes.</p>
+            <p class="contact-detail"><a href="mailto:lortet.gilles@gmail.com">lortet.gilles@gmail.com</a></p>
+            <a class="button" href="mailto:lortet.gilles@gmail.com">Demander un échange</a>
+            <p class="muted">Données utilisées uniquement pour répondre à votre demande. Vous pouvez demander l’accès, la rectification ou la suppression par email.</p>
+        </div>
+        <div class="card reveal">
+            <h2>Informations utiles à fournir</h2>
+            <ul>
+                <li>Votre rôle et le périmètre concerné.</li>
+                <li>Le contexte (tension, décision, prévention, etc.).</li>
+                <li>Le type de population visée (CODIR, managers, terrain).</li>
+                <li>Le format envisagé (atelier, diagnostic, parcours).</li>
+                <li>Le calendrier souhaité.</li>
+            </ul>
+        </div>
+        <div class="card reveal">
+            <h2>Ce que vous pouvez attendre</h2>
+            <ul>
+                <li>Un cadre clair et des échanges simples.</li>
+                <li>Des propositions concrètes, adaptées au terrain.</li>
+                <li>Une réponse honnête sur ce qui est pertinent ou non.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">Disponibilité</p>
+            <h2>Basé en France, interventions nationales</h2>
+            <p>Possibilité d'interventions sur site ou en distanciel selon vos contraintes.</p>
+        </div>
+        <a class="button" href="mailto:lortet.gilles@gmail.com">Écrire un email</a>
+    </div>
+</section>
+{% endblock %}
