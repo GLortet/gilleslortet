@@ -163,7 +163,7 @@ ul {
 
 .cta--header {
     background: var(--accent-soft);
-    color: #fff;
+    color: var(--accent);
     border-color: rgba(31, 78, 95, 0.25);
 }
 
@@ -605,7 +605,7 @@ main {
 }
 
 .page-pcm .lead,
-.page-pcm .section-header p {
+.page-pcm .section-header p:not(.section-kicker):not(.eyebrow) {
     color: var(--muted);
 }
 
