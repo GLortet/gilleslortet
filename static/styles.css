@@ -313,6 +313,47 @@ main {
     padding: var(--space-6) 0;
 }
 
+.page-home .home-major {
+    padding: var(--space-7) 0;
+}
+
+.page-home .home-compact {
+    padding: var(--space-5) 0;
+}
+
+.page-home .section-header {
+    margin-bottom: var(--space-5);
+}
+
+.page-home .home-compact .section-header {
+    margin-bottom: var(--space-3);
+}
+
+.page-home .hero {
+    padding-bottom: var(--space-7);
+}
+
+.page-home .hero-copy h1 {
+    max-width: 20ch;
+}
+
+.page-home .hero-media {
+    filter: saturate(0.9) contrast(1.02);
+    box-shadow: 0 16px 28px rgba(17, 24, 39, 0.08);
+}
+
+.page-home .cards .card {
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+@media (hover: hover) {
+    .page-home .cards .card:hover {
+        box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
+        transform: translateY(-2px);
+        border-color: var(--accent-soft);
+    }
+}
+
 .section-soft {
     background: var(--surface-alt);
 }
