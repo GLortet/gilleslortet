@@ -9,6 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    const siteHeader = document.querySelector(".site-header");
+    if (siteHeader) {
+        const updateHeader = () => {
+            const shouldCompact = window.scrollY > 12;
+            siteHeader.classList.toggle("is-compact", shouldCompact);
+        };
+        updateHeader();
+        window.addEventListener("scroll", updateHeader, { passive: true });
+    }
+
     const reveals = document.querySelectorAll(".reveal");
     if (reveals.length > 0 && "IntersectionObserver" in window) {
         const observer = new IntersectionObserver(
