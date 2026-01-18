@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% set title = "PCM | Process Communication Model" %}
+{% set page_class = "page-pcm" %}
+{% set description = "Comprendre les comportements sous pression et améliorer la communication grâce au Process Communication Model." %}
+
+{% block content %}
+<section class="page-hero pcm-major">
+    <div class="container">
+        <p class="eyebrow">Process Communication Model</p>
+        <h1>Se connecter avec le meilleur de chacun, dans le travail réel.</h1>
+        <div class="flow measure">
+            <p class="lead">Un cadre clair pour mieux se comprendre quand la tension monte.</p>
+            <p class="lead">Quand la pression monte, la communication devient un enjeu opérationnel.</p>
+            <p class="lead">Deux formats, concrets et applicables dès la première journée.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider pcm-compact">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">À quoi sert PCM ici</p>
+            <h2 class="section-title-reveal">Clarifier les échanges, dans les situations qui comptent</h2>
+        </div>
+        <ul class="bullet-list reveal">
+            <li>Tensions relationnelles qui ralentissent les décisions.</li>
+            <li>Coopération fragile entre métiers, sites ou niveaux hiérarchiques.</li>
+            <li>Communication sous pression, quand tout va vite.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-divider section-soft pcm-showcase section-alt pcm-major">
+    <div class="container">
+        <div class="pcm-showcase-header">
+            <div class="section-header flow measure">
+                <p class="eyebrow">APERÇU</p>
+                <h2 class="section-title-reveal">7 pages pour comprendre l’approche, en 20 secondes</h2>
+                <p>Faites défiler. Cliquez pour agrandir. Téléchargez la version complète.</p>
+            </div>
+            <div class="pcm-showcase-actions">
+                <a class="button button-secondary" id="pcm-download-brochure" href="{{ url_for('static', filename='docs/brochure-pcm.pdf') }}" target="_blank" rel="noopener" aria-label="Télécharger la brochure PCM">Télécharger la brochure</a>
+                <a class="button" id="pcm-request-call" href="{{ url_for('contact') }}" aria-label="Demander un échange">Demander un échange</a>
+            </div>
+        </div>
+
+        <div class="pcm-showcase-viewer">
+            <button class="pcm-showcase-arrow" type="button" data-showcase-prev aria-label="Voir la page précédente">←</button>
+            <div class="pcm-showcase-track" data-showcase-track>
+                <figure class="pcm-showcase-slide is-active" data-index="0">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-1.png') }}" alt="Brochure PCM page 1" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="1">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-2.png') }}" alt="Brochure PCM page 2" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="2">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-3.png') }}" alt="Brochure PCM page 3" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="3">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-4.png') }}" alt="Brochure PCM page 4" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="4">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-5.png') }}" alt="Brochure PCM page 5" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="5">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-6.png') }}" alt="Brochure PCM page 6" loading="lazy" width="1200" height="900">
+                </figure>
+                <figure class="pcm-showcase-slide" data-index="6">
+                    <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-7.png') }}" alt="Brochure PCM page 7" loading="lazy" width="1200" height="900">
+                </figure>
+            </div>
+            <button class="pcm-showcase-arrow" type="button" data-showcase-next aria-label="Voir la page suivante">→</button>
+        </div>
+
+        <div class="pcm-showcase-thumbs" data-showcase-thumbs>
+            <button class="pcm-showcase-thumb is-active" type="button" data-index="0" aria-label="Voir la page 1">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-1.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="1" aria-label="Voir la page 2">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-2.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="2" aria-label="Voir la page 3">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-3.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="3" aria-label="Voir la page 4">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-4.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="4" aria-label="Voir la page 5">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-5.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="5" aria-label="Voir la page 6">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-6.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+            <button class="pcm-showcase-thumb" type="button" data-index="6" aria-label="Voir la page 7">
+                <img src="{{ url_for('static', filename='images/pcm/brochure-pcm-7.png') }}" alt="" loading="lazy" width="220" height="160">
+            </button>
+        </div>
+    </div>
+
+    <div class="pcm-showcase-lightbox" data-showcase-lightbox aria-hidden="true" role="dialog" aria-label="Aperçu brochure PCM">
+        <div class="pcm-showcase-lightbox-inner">
+            <button class="pcm-showcase-lightbox-close" type="button" data-showcase-close aria-label="Fermer l’aperçu">Fermer</button>
+            <img class="pcm-showcase-lightbox-image" src="" alt="" width="1400" height="1000">
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft section-divider pcm-formats section-alt pcm-major">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">PARCOURS</p>
+            <h2 class="section-title-reveal">Du premier déclic à une maîtrise opérationnelle du PCM</h2>
+            <p>Validez le modèle, installez un langage commun, puis passez au niveau complet (PCM1).</p>
+        </div>
+        <div class="cards format-grid">
+            <article class="card reveal">
+                <div class="pcm-format-step">
+                    <span class="pcm-format-step-number">01</span>
+                    <span class="pcm-format-step-label">Clarifier pour soi</span>
+                </div>
+                <h3>Débrief de profil PCM</h3>
+                <p class="card-meta">Durée : 1h30 à 2h</p>
+                <ul>
+                    <li>Lecture approfondie du profil PCM</li>
+                    <li>Identification des besoins psychologiques</li>
+                    <li>Repérage des comportements sous stress</li>
+                    <li>Clés concrètes pour ajuster sa communication</li>
+                </ul>
+                <a class="text-link" href="{{ url_for('contact') }}">Voir si c’est adapté</a>
+            </article>
+            <article class="card reveal pcm-format-featured">
+                <div class="pcm-format-step">
+                    <span class="pcm-format-step-number">02</span>
+                    <span class="pcm-format-step-label">Installer un langage commun</span>
+                </div>
+                <span class="pcm-format-badge">Offre phare</span>
+                <h3>Découvrir le PCM</h3>
+                <p class="card-meta">Durée : 1 à 2 jours</p>
+                <ul>
+                    <li>Fondamentaux du Process Communication Model®</li>
+                    <li>Structure Base / Phase</li>
+                    <li>Perceptions et besoins psychologiques</li>
+                    <li>Repères sur les comportements sous stress</li>
+                    <li>Mises en situation et exercices pratiques</li>
+                </ul>
+                <p class="pcm-format-proof">Le format le plus choisi pour démarrer.</p>
+                <a class="text-link" href="{{ url_for('contact') }}">Choisir ce point d’entrée</a>
+            </article>
+            <article class="card reveal">
+                <div class="pcm-format-step">
+                    <span class="pcm-format-step-number">03</span>
+                    <span class="pcm-format-step-label">Ancrer la pratique sous pression</span>
+                </div>
+                <h3>Approfondir le PCM</h3>
+                <p class="card-meta">Durée : 3 à 4 jours</p>
+                <ul>
+                    <li>Approfondissement de la personnalité</li>
+                    <li>Canaux de communication</li>
+                    <li>Besoins psychologiques (niveau avancé)</li>
+                    <li>Comportements sous stress : prévention et sortie de stress</li>
+                </ul>
+                <a class="text-link" href="{{ url_for('contact') }}">Voir si c’est adapté</a>
+            </article>
+        </div>
+        <p class="pcm-format-note">Chaque format est modulable. La durée et le contenu s’adaptent à vos enjeux terrain et à votre niveau de pratique.</p>
+    </div>
+</section>
+
+<section class="section section-divider pcm-compact">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Ce que ça permet</p>
+            <h2 class="section-title-reveal">Un cadre pour mieux décider et mieux travailler</h2>
+        </div>
+        <ul class="bullet-list reveal">
+            <li>Un vocabulaire commun pour relire les tensions.</li>
+            <li>Des repères pour ajuster la communication.</li>
+            <li>Une lecture plus claire des besoins psychologiques.</li>
+            <li>Une base pour travailler les comportements sous stress.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-soft section-divider pcm-compact">
+    <div class="container">
+        <div class="section-header flow measure">
+            <p class="eyebrow">Ce que je refuse</p>
+            <h2 class="section-title-reveal">Un cadre simple, loin des promesses faciles</h2>
+        </div>
+        <div class="card reveal flow">
+            <p>Je ne vends pas des promesses magiques.</p>
+            <p>Je ne fais pas du PCM “hors-sol”.</p>
+            <p>Je n'empile pas des concepts : l'objectif est l'usage dans le travail réel.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section-divider section-alt pcm-major">
+    <div class="container callout reveal">
+        <div>
+            <p class="eyebrow">PCM</p>
+            <h2>Demander un échange (30 min)</h2>
+            <p>Un échange rapide permet de cadrer le bon format.</p>
+        </div>
+        <a class="button" id="pcm-request-call-bottom" href="{{ url_for('contact') }}">Demander un échange</a>
+    </div>
+</section>
+{% endblock %}
