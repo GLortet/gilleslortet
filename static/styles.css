@@ -570,6 +570,112 @@ main {
     padding: var(--space-7) 0;
 }
 
+.page-approche .page-hero {
+    padding-bottom: var(--space-6);
+}
+
+.page-approche .section-header {
+    margin-bottom: var(--space-5);
+}
+
+.page-approche .approach-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: var(--space-3);
+}
+
+.page-approche .metric-label {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.page-approche .metric-value {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.page-approche .micro-list {
+    margin-top: 12px;
+    display: grid;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.page-approche .cards {
+    align-items: stretch;
+}
+
+.page-approche .card {
+    box-shadow: 0 1px 2px rgba(17, 24, 39, 0.05);
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+@media (hover: hover) {
+    .page-approche .card:hover {
+        box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
+        transform: translateY(-2px);
+        border-color: var(--accent-soft);
+    }
+}
+
+.page-approche .timeline {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.page-approche .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    width: 1px;
+    background: var(--border);
+}
+
+.page-approche .timeline li {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.page-approche .timeline-marker {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+}
+
+.page-approche .timeline-content h3 {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.page-approche .manifesto {
+    background: var(--surface-alt);
+    border-left: 2px solid var(--accent-soft);
+    padding: var(--space-3);
+    border-radius: var(--radius);
+    display: grid;
+    gap: 12px;
+    color: var(--ink-soft);
+}
+
 .page-approche .card,
 .page-pcm .card,
 .page-circuitvital .card,
