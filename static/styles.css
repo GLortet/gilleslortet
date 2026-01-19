@@ -201,6 +201,11 @@ main {
     height: 48px;
 }
 
+/* Force la couleur du texte du CTA dans le header */
+.site-header .cta--header {
+  color: #fff;
+}
+
 .hero {
     padding: var(--space-7) 0 var(--space-6);
 }
@@ -340,6 +345,34 @@ main {
 .page-home .cards .card {
     transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
+
+/* Bloc impact chiffré – accueil */
+.impact-statement {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px 28px;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+    max-width: 520px;
+}
+
+.impact-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    margin: 0;
+}
+
+.impact-text strong {
+    color: var(--accent); /* ton vert */
+    font-weight: 600;
+}
+
+.impact-source {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
 
 @media (hover: hover) {
     .page-home .cards .card:hover {
