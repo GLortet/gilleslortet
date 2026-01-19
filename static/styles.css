@@ -1401,6 +1401,30 @@ main {
     overflow: hidden;
 }
 
+.field-consent {
+  margin-top: 1.2rem;
+}
+
+.field-consent .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.field-consent .checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: #1f4e5f; /* adapte si besoin à ta charte */
+}
+
+.field-consent .checkbox span {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 @media (max-width: 900px) {
     .pcm-showcase-header {
         flex-direction: column;
