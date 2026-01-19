@@ -565,6 +565,116 @@ main {
     gap: var(--space-3);
 }
 
+.contact-form {
+    display: grid;
+    gap: var(--space-2);
+}
+
+.contact-form.is-loading {
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.form-intro {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-2);
+}
+
+.field {
+    display: grid;
+    gap: 8px;
+}
+
+.field label {
+    font-weight: 600;
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(31, 78, 95, 0.15);
+}
+
+.field-help {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.field-hidden {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+}
+
+.field-consent .checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 14px;
+    color: var(--ink-soft);
+}
+
+.field-consent input {
+    margin-top: 3px;
+}
+
+.form-actions {
+    display: grid;
+    gap: 10px;
+}
+
+.form-note {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.contact-inline {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--ink-soft);
+    background: var(--surface-alt);
+    padding: 6px 12px;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.form-status {
+    font-size: 14px;
+    color: var(--ink-soft);
+}
+
+.form-status.is-error {
+    color: #b91c1c;
+}
+
+.form-status.is-success {
+    color: #15803d;
+}
+
 .contact-detail {
     font-weight: 600;
     margin: 12px 0 16px;

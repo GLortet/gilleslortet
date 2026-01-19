@@ -205,6 +205,66 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    const contactForm = document.querySelector("[data-contact-form]");
+    if (contactForm) {
+        const status = contactForm.querySelector(".form-status");
+        const submitButton = contactForm.querySelector("button[type='submit']");
+
+        const setStatus = (message, tone) => {
+            if (!status) {
+                return;
+            }
+            status.textContent = message;
+            status.classList.toggle("is-error", tone === "error");
+            status.classList.toggle("is-success", tone === "success");
+        };
+
+        contactForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+
+            setStatus("Envoi en cours...", "info");
+            contactForm.classList.add("is-loading");
+            contactForm.setAttribute("aria-busy", "true");
+            if (submitButton) {
+                submitButton.disabled = true;
+            }
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    body: new FormData(contactForm),
+                    headers: { Accept: "application/json" }
+                });
+
+                if (response.status === 204) {
+                    setStatus("Merci, votre demande a bien été envoyée.", "success");
+                    contactForm.reset();
+                    return;
+                }
+
+                const data = await response.json();
+                if (response.ok) {
+                    setStatus(data.message || "Merci, votre demande a bien été envoyée.", "success");
+                    contactForm.reset();
+                } else {
+                    setStatus(data.message || "Une erreur est survenue. Merci de réessayer.", "error");
+                }
+            } catch (error) {
+                setStatus("Connexion impossible. Merci de réessayer plus tard.", "error");
+            } finally {
+                contactForm.classList.remove("is-loading");
+                contactForm.removeAttribute("aria-busy");
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+            }
+        });
+    }
+
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && lightbox?.classList.contains("is-open")) {
             closeLightbox();
