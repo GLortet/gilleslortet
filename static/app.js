@@ -83,6 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const lightbox = document.querySelector("[data-showcase-lightbox]");
     const lightboxImage = document.querySelector(".pcm-showcase-lightbox-image");
     const lightboxClose = document.querySelector("[data-showcase-close]");
+    const lightboxPrev = document.querySelector("[data-showcase-lightbox-prev]");
+    const lightboxNext = document.querySelector("[data-showcase-lightbox-next]");
+    let lightboxIndex = 0;
 
     const setActiveSlide = (index) => {
         showcaseSlides.forEach((slide) => slide.classList.remove("is-active"));
@@ -106,6 +109,14 @@ document.addEventListener("DOMContentLoaded", () => {
         lightbox.classList.add("is-open");
         lightbox.setAttribute("aria-hidden", "false");
         document.body.classList.add("body-locked");
+    };
+
+    const updateLightbox = (index) => {
+        const img = showcaseSlides[index]?.querySelector("img");
+        if (img && lightboxImage) {
+            lightboxImage.src = img.currentSrc || img.src;
+            lightboxImage.alt = img.alt || "Aperçu brochure PCM";
+        }
     };
 
     const closeLightbox = () => {
@@ -137,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
             slide.addEventListener("click", () => {
                 const img = slide.querySelector("img");
                 if (img) {
+                    lightboxIndex = Number(slide.dataset.index);
                     openLightbox(img);
                 }
             });
@@ -179,9 +191,31 @@ document.addEventListener("DOMContentLoaded", () => {
         lightboxClose.addEventListener("click", closeLightbox);
     }
 
+    if (lightboxPrev) {
+        lightboxPrev.addEventListener("click", () => {
+            lightboxIndex = Math.max(lightboxIndex - 1, 0);
+            updateLightbox(lightboxIndex);
+        });
+    }
+
+    if (lightboxNext) {
+        lightboxNext.addEventListener("click", () => {
+            lightboxIndex = Math.min(lightboxIndex + 1, showcaseSlides.length - 1);
+            updateLightbox(lightboxIndex);
+        });
+    }
+
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && lightbox?.classList.contains("is-open")) {
             closeLightbox();
+        }
+        if (lightbox?.classList.contains("is-open") && event.key === "ArrowLeft") {
+            lightboxIndex = Math.max(lightboxIndex - 1, 0);
+            updateLightbox(lightboxIndex);
+        }
+        if (lightbox?.classList.contains("is-open") && event.key === "ArrowRight") {
+            lightboxIndex = Math.min(lightboxIndex + 1, showcaseSlides.length - 1);
+            updateLightbox(lightboxIndex);
         }
     });
 });

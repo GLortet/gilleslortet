@@ -8,9 +8,24 @@
     <div class="container">
         <p class="eyebrow section-kicker">Circuit Vital</p>
         <h1>Une routine simple pour réguler la tension</h1>
+        <p class="signature-line">5–10 minutes. Zéro injonction. Effet immédiat.</p>
         <div class="flow measure">
             <p class="lead">Circuit Vital est une pratique corporelle courte, accessible à tous, pensée pour les contextes où la pression est quotidienne.</p>
             <p class="lead">5 à 10 minutes suffisent pour retrouver un état plus stable.</p>
+        </div>
+        <div class="circuitvital-facts">
+            <div>
+                <p class="fact-label">Durée</p>
+                <p class="fact-value">5–10 min</p>
+            </div>
+            <div>
+                <p class="fact-label">Public</p>
+                <p class="fact-value">Équipes terrain / managers</p>
+            </div>
+            <div>
+                <p class="fact-label">Format</p>
+                <p class="fact-value">Rituel simple, reproductible</p>
+            </div>
         </div>
     </div>
 </section>
@@ -22,11 +37,11 @@
             <h2>Quand le corps se relâche, la communication s'apaise</h2>
         </div>
         <div class="two-columns">
-            <div class="card reveal">
+            <div class="card reveal circuitvital-card">
                 <h3>Une routine courte</h3>
                 <p>Facile à intégrer entre deux réunions, sur un poste de travail ou en atelier.</p>
             </div>
-            <div class="card reveal">
+            <div class="card reveal circuitvital-card">
                 <h3>Un effet immédiat</h3>
                 <p>On observe un retour au calme plus rapide et une meilleure capacité d'écoute.</p>
             </div>
@@ -76,6 +91,10 @@
     <div class="pcm-showcase-lightbox" data-showcase-lightbox aria-hidden="true" role="dialog" aria-label="Aperçu Circuit Vital">
         <div class="pcm-showcase-lightbox-inner">
             <button class="pcm-showcase-lightbox-close" type="button" data-showcase-close aria-label="Fermer l’aperçu">Fermer</button>
+            <div class="pcm-showcase-lightbox-controls">
+                <button class="pcm-showcase-arrow" type="button" data-showcase-lightbox-prev aria-label="Slide précédente">←</button>
+                <button class="pcm-showcase-arrow" type="button" data-showcase-lightbox-next aria-label="Slide suivante">→</button>
+            </div>
             <img class="pcm-showcase-lightbox-image" src="" alt="" width="1400" height="1000">
         </div>
     </div>
@@ -87,10 +106,10 @@
             <p class="eyebrow section-kicker">Cas d'usage</p>
             <h2>Où Circuit Vital s'intègre naturellement</h2>
         </div>
-        <ul class="bullet-list reveal">
-            <li>Avant une réunion difficile ou un point sécurité sensible.</li>
-            <li>En prévention HSE / QVT pour les équipes terrain.</li>
-            <li>Dans les moments de friction entre équipes ou métiers.</li>
+        <ul class="timeline-list">
+            <li class="reveal">Avant une réunion difficile ou un point sécurité sensible.</li>
+            <li class="reveal">En prévention HSE / QVT pour les équipes terrain.</li>
+            <li class="reveal">Dans les moments de friction entre équipes ou métiers.</li>
         </ul>
     </div>
 </section>
@@ -102,17 +121,18 @@
             <h2>Une pratique simple, sans posture</h2>
         </div>
         <div class="two-columns">
-            <div class="card reveal">
+            <div class="card reveal circuitvital-card">
                 <h3>Ce que c'est</h3>
-                <ul>
+                <ul class="line-list">
                     <li>Un protocole simple et reproductible.</li>
                     <li>Une régulation corporelle accessible à tous.</li>
                     <li>Un appui concret pour la qualité relationnelle.</li>
                 </ul>
             </div>
-            <div class="card reveal">
+            <div class="card reveal circuitvital-card circuitvital-card-muted">
+                <p class="card-tag">À éviter</p>
                 <h3>Ce que ce n'est pas</h3>
-                <ul>
+                <ul class="line-list">
                     <li>Un cours de sport ou une injonction au bien-être.</li>
                     <li>Une pratique ésotérique ou hors-sol.</li>
                     <li>Une solution isolée des enjeux opérationnels.</li>
@@ -129,7 +149,10 @@
             <h2>Mettre en place un pilote</h2>
             <p>Un format court permet de tester l'impact en conditions réelles.</p>
         </div>
-        <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+        <div class="callout-actions">
+            <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
+            <p class="callout-note">30 min. Sans engagement. Réponse sous 48h.</p>
+        </div>
     </div>
 </section>
 {% endblock %}
