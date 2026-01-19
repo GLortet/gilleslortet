@@ -539,32 +539,62 @@ main {
 
 .site-footer {
     border-top: 1px solid var(--border);
-    background: var(--surface);
-    padding: var(--space-5) 0 var(--space-3);
+    background: rgba(244, 243, 238, 0.7);
+    padding: var(--space-6) 0 var(--space-4);
     color: var(--muted);
 }
 
-.footer-inner {
+.footer-top {
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-4);
+    color: var(--ink-soft);
+    max-width: 60ch;
+}
+
+.footer-main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: var(--space-3);
-    margin-bottom: var(--space-3);
+    gap: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.footer-column {
+    display: grid;
+    gap: 8px;
 }
 
 .footer-title {
     color: var(--ink);
     font-weight: 600;
-    margin-bottom: 8px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 6px;
 }
 
-.footer-inner ul {
+.footer-main ul {
     display: grid;
     gap: 8px;
 }
 
+.footer-main a {
+    color: var(--ink-soft);
+}
+
+.footer-main a:hover,
+.footer-main a:focus {
+    color: var(--ink);
+}
+
 .footer-bottom {
-    text-align: center;
-    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-3);
 }
 
 .reveal {

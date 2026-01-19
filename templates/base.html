@@ -43,27 +43,34 @@
     </div>
 
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <div>
+        <div class="container footer-top reveal">
+            <p>Formations et accompagnements humains pour environnements exigeants.</p>
+        </div>
+        <div class="container footer-main">
+            <div class="footer-column">
                 <p class="footer-title">Gilles Lortet</p>
-                <p>Formations et accompagnements pour dirigeants, RH et HSE. PCM et Circuit Vital.</p>
+                <p>Formations & accompagnements (PCM, Circuit Vital)</p>
+                <p>Publics : dirigeants, RH, HSE</p>
             </div>
-            <div>
-                <p class="footer-title">Contact</p>
-                <p><a href="mailto:lortet.gilles@gmail.com">lortet.gilles@gmail.com</a></p>
-                <p>Basé en France — interventions nationales.</p>
-            </div>
-            <div>
+            <div class="footer-column">
                 <p class="footer-title">Navigation</p>
                 <ul>
+                    <li><a href="{{ url_for('home') }}">Accueil</a></li>
+                    <li><a href="{{ url_for('approche') }}">Approche</a></li>
                     <li><a href="{{ url_for('pcm') }}">PCM</a></li>
                     <li><a href="{{ url_for('circuitvital') }}">Circuit Vital</a></li>
-                    <li><a href="{{ url_for('approche') }}">Approche</a></li>
                 </ul>
             </div>
+            <div class="footer-column">
+                <p class="footer-title">Contact</p>
+                <p><a href="mailto:lortet.gilles@gmail.com">lortet.gilles@gmail.com</a></p>
+                <p>Basé en France</p>
+                <p>Interventions nationales</p>
+            </div>
         </div>
-        <div class="footer-bottom">
+        <div class="container footer-bottom">
             <p>© 2024 Gilles Lortet. Tous droits réservés.</p>
+            <p>Mentions légales</p>
         </div>
     </footer>
 </body>
