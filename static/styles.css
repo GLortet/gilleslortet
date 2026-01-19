@@ -773,6 +773,25 @@ main {
     color: var(--ink-soft);
 }
 
+.page-a-propos .section {
+    padding: var(--space-7) 0;
+}
+
+.page-a-propos .section-header {
+    margin-bottom: var(--space-5);
+}
+
+.page-a-propos .section-lead {
+    font-size: 18px;
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+.page-a-propos .cards .card {
+    padding: calc(var(--space-3) + 6px);
+    box-shadow: 0 1px 2px rgba(17, 24, 39, 0.05);
+}
+
 .page-circuitvital .signature-line {
     margin-top: 12px;
     font-size: 12px;
