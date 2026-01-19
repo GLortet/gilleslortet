@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#e2eef1"/>
+  <rect x="60" y="80" width="780" height="440" rx="28" fill="#fafaf7" stroke="#c8d8dc" stroke-width="2"/>
+  <g fill="#1f4e5f" font-family="Arial, sans-serif">
+    <text x="120" y="200" font-size="34" font-weight="600">Visuel principal</text>
+    <text x="120" y="250" font-size="18">Espace réservé pour une photo professionnelle.</text>
+    <text x="120" y="290" font-size="18">Format 3:2 — sobre et chaleureux.</text>
+  </g>
+  <circle cx="700" cy="300" r="110" fill="#1f4e5f" opacity="0.12"/>
+  <circle cx="720" cy="320" r="70" fill="#1f4e5f" opacity="0.2"/>
+</svg>
