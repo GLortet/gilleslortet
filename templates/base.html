@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ title if title else "Consultant communication sous pression | Gilles Lortet" }}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{{ description if description else "Consultant senior pour dirigeants, managers et équipes : communication et décision sous pression en France et Grand Est." }}{% endblock %}">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="icon" href="{{ url_for('favicon') }}">
+
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Gilles Lortet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title if title else 'Gilles Lortet' }}">
+    <meta property="og:description" content="{{ description if description else 'Communication et décision sous pression pour dirigeants, managers et équipes.' }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:image" content="{{ og_image if og_image else default_og_image }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title if title else 'Gilles Lortet' }}">
+    <meta name="twitter:description" content="{{ description if description else 'Communication et décision sous pression pour dirigeants, managers et équipes.' }}">
+    <meta name="twitter:image" content="{{ og_image if og_image else default_og_image }}">
+
+    <link rel="preload" as="style" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+
+    <script type="application/ld+json">{{ organization_schema | safe }}</script>
+    <script type="application/ld+json">{{ breadcrumb_schema | safe }}</script>
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="{{ page_class if page_class else '' }}">
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo site-logo" href="{{ url_for('home') }}" aria-label="Retour à l'accueil Gilles Lortet">
+                <img src="{{ url_for('static', filename='images/hero.svg') }}" alt="Gilles Lortet">
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+            <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+                <a href="{{ url_for('home') }}">Accueil</a>
+                <a href="{{ url_for('approche') }}">Approche</a>
+                <a href="{{ url_for('pcm') }}">PCM</a>
+                <a href="{{ url_for('circuitvital') }}">Circuit Vital</a>
+                <a href="{{ url_for('a_propos') }}">À propos</a>
+                <a class="cta cta--header" href="{{ url_for('contact') }}">Demander un échange</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <div class="cookie-banner" role="region" aria-label="Cookies">
+        <div class="container stack">
+            <p>Ce site utilise uniquement des cookies nécessaires à son fonctionnement (préférence de consentement). Aucun cookie publicitaire ou de suivi.</p>
+            <button class="button button-secondary" type="button" data-cookie-accept>J’ai compris</button>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-top reveal">
+            <p class="footer-signature">Clarté humaine. Exigence opérationnelle.</p>
+            <p>Accompagnement individuel et interventions collectives en communication et décision sous pression.</p>
+        </div>
+        <div class="container footer-main">
+            <div class="footer-column">
+                <p class="footer-title">Gilles Lortet</p>
+                <p>Consultant senior, approche terrain</p>
+                <p>Dirigeants, DRH, responsables formation, managers</p>
+            </div>
+            <div class="footer-column">
+                <p class="footer-title">Offres</p>
+                <ul>
+                    <li><a href="{{ url_for('approche') }}#offre-individuelle">Clarté Managériale Individuelle</a></li>
+                    <li><a href="{{ url_for('pcm') }}#offre-collective">Communication & décision sous pression</a></li>
+                    <li><a href="{{ url_for('circuitvital') }}">Circuit Vital</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p class="footer-title">Contact</p>
+                <p><a href="mailto:contact@gilleslortet.fr">contact@gilleslortet.fr</a></p>
+                <p>Basé en France (Grand Est)</p>
+                <p>Interventions nationales</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© {{ current_year }} Gilles Lortet. Tous droits réservés.</p>
+            <p>Mentions légales</p>
+        </div>
+    </footer>
+</body>
+</html>
