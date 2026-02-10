@@ -29,45 +29,61 @@
         </div>
     </div>
 </section>
+
 <section class="section section-divider" id="ressources">
   <div class="container">
     <div class="section-header flow measure">
       <p class="eyebrow section-kicker">Ressources</p>
-      <h2>Supports Circuit Vital</h2>
+      <h2>Supports opérationnels Circuit Vital</h2>
       <p>
-        Posters et bonus pour faciliter une mise en place simple, en autonomie.
-        Pour un déploiement en entreprise (ateliers, intégration prévention, supports papier), contactez-moi.
+        Des supports terrain conçus pour faciliter l’appropriation autonome et l’ancrage durable.
+        Ils sont utilisés dans les interventions Circuit Vital et les dispositifs de prévention en entreprise.
       </p>
     </div>
 
     <div class="cards">
+      <!-- Carte principale : Posters (regroupe adultes + enfants) -->
       <article class="card reveal">
-        <h3>Poster adultes</h3>
-        <p>Affichage terrain, routine quotidienne.</p>
-        <p><a class="btn" href="{{ url_for('static', filename='docs/circuit-vital-poster-adulte.pdf') }}" target="_blank" rel="noopener">Ouvrir le PDF</a></p>
+        <h3>Posters Circuit Vital</h3>
+        <p>Supports visuels pour l’affichage terrain et la mise en pratique quotidienne.</p>
+        <ul class="micro-list">
+          <li><a class="link" href="{{ url_for('static', filename='docs/circuit-vital-poster-adulte.pdf') }}" target="_blank" rel="noopener">Consulter le poster adultes (PDF)</a></li>
+          <li><a class="link" href="{{ url_for('static', filename='docs/circuit-vital-poster-enfant.pdf') }}" target="_blank" rel="noopener">Consulter le poster enfants (PDF)</a></li>
+        </ul>
+      </article>
+
+      <!-- Appuis : bonus -->
+      <article class="card reveal">
+        <h3>Guide d’installation</h3>
+        <p>Installer la routine sans friction, avec un rituel simple et reproductible.</p>
+        <p>
+          <a class="btn" href="{{ url_for('static', filename='docs/bonus-rituel-3-etapes.pdf') }}" target="_blank" rel="noopener">
+            Consulter le guide (PDF)
+          </a>
+        </p>
       </article>
 
       <article class="card reveal">
-        <h3>Poster enfants</h3>
-        <p>Version ludique, famille / école.</p>
-        <p><a class="btn" href="{{ url_for('static', filename='docs/circuit-vital-poster-enfant.pdf') }}" target="_blank" rel="noopener">Ouvrir le PDF</a></p>
+        <h3>Conseils d’intégration</h3>
+        <p>Intégration au quotidien en famille ou au travail, sans surcharger l’agenda.</p>
+        <p>
+          <a class="btn" href="{{ url_for('static', filename='docs/bonus-conseils-famille-travail.pdf') }}" target="_blank" rel="noopener">
+            Consulter les conseils (PDF)
+          </a>
+        </p>
       </article>
 
+      <!-- Carte “B2B” discrète -->
       <article class="card reveal">
-        <h3>Bonus 1 : Rituel en 3 étapes</h3>
-        <p>Installer la routine sans friction.</p>
-        <p><a class="btn" href="{{ url_for('static', filename='docs/bonus-rituel-3-etapes.pdf') }}" target="_blank" rel="noopener">Ouvrir le PDF</a></p>
-      </article>
-
-      <article class="card reveal">
-        <h3>Bonus 2 : Conseils famille ou travail</h3>
-        <p>Intégration simple au quotidien.</p>
-        <p><a class="btn" href="{{ url_for('static', filename='docs/bonus-conseils-famille-travail.pdf') }}" target="_blank" rel="noopener">Ouvrir le PDF</a></p>
+        <h3>Déploiement en entreprise</h3>
+        <p>Ateliers, intégration prévention, supports papier et ancrage dans vos situations réelles.</p>
+        <p><a class="btn" href="{{ url_for('contact') }}">Me contacter</a></p>
       </article>
     </div>
 
     <p class="muted" style="margin-top: 1rem;">
-      Ces supports sont mis à disposition pour faciliter l’appropriation. L’essentiel se joue dans la mise en pratique et l’ancrage dans vos situations réelles.
+      Ces supports permettent une mise en œuvre autonome. L’essentiel se joue ensuite dans l’accompagnement,
+      l’ajustement au contexte et l’ancrage dans la durée.
     </p>
   </div>
 </section>
