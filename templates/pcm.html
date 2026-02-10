@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% set title = "PCM | Communication & décision sous pression" %}
+{% set title = "PCM | Communication et décision sous pression (B2B)" %}
 {% set page_class = "page-pcm" %}
-{% set description = "Le modèle PCM® comme levier de communication et de décision sous pression pour dirigeants et équipes." %}
+{% set description = "PCM® utilisé comme levier de communication et décision sous pression pour dirigeants, managers et équipes en France." %}
 
 {% block content %}
 <section class="page-hero pcm-major">
@@ -105,51 +105,51 @@
     </div>
 </section>
 
-<section class="section section-soft section-divider pcm-formats section-alt pcm-major">
+<section class="section section-soft section-divider pcm-formats section-alt pcm-major" id="offre-collective">
     <div class="container">
         <div class="section-header flow measure">
             <p class="eyebrow section-kicker">PARCOURS</p>
-            <h2 class="section-title-reveal">Des repères concrets pour agir sous pression</h2>
-            <p>Le PCM® apporte une grille de lecture claire des comportements, des besoins et des signaux de stress. L’essentiel : savoir l’utiliser dans vos situations réelles, là où la décision se joue.</p>
+            <h2 class="section-title-reveal">Offre 2 : Communication & décision sous pression (collectif)</h2>
+            <p>Les cadres PCM (Discover, PCM1) restent des références. L’essentiel est l’usage dans vos situations réelles.</p>
         </div>
         <div class="cards format-grid">
-            <article class="card reveal">
+            <article class="card reveal" id="niveau-1">
                 <div class="pcm-format-step">
                     <span class="pcm-format-step-number">01</span>
-                    <span class="pcm-format-step-label">Clarifier pour soi</span>
+                    <span class="pcm-format-step-label">Sensibilisation / cadrage</span>
                 </div>
-                <h3>Entretien individuel confidentiel · 1h30 à 2h</h3>
-                <p class="card-meta">Analyse de la situation et débrief de profil PCM pour clarifier la posture, la communication et les décisions à prendre.</p>
-                <p>Un point d’appui individuel pour relire son propre fonctionnement sous pression.</p>
-                <p>On identifie les déclencheurs, les besoins et les ajustements utiles sur le terrain.</p>
-                <a class="text-link" href="{{ url_for('contact') }}">Échanger sur le contexte</a>
+                <h3>Niveau 1 — Format court</h3>
+                <p class="card-meta">Exemple : 1 journée</p>
+                <p>Installer un langage commun pour décoder les tensions et fluidifier les échanges.</p>
+                <p>Un premier cadre partagé pour mieux décider quand la pression monte.</p>
+                <a class="text-link" href="{{ url_for('contact') }}">Vérifier l’adéquation</a>
             </article>
-            <article class="card reveal pcm-format-featured">
+            <article class="card reveal pcm-format-featured" id="niveau-2">
                 <div class="pcm-format-step">
                     <span class="pcm-format-step-number">02</span>
-                    <span class="pcm-format-step-label">Installer un langage commun</span>
+                    <span class="pcm-format-step-label">Approfondissement opérationnel</span>
                 </div>
-                <span class="pcm-format-badge">Offre phare</span>
-                <h3>Alignement collectif sous pression</h3>
-                <p class="card-meta">Durée : 1 à 2 jours</p>
-                <p>Un temps structuré pour poser un langage commun, clarifier les échanges et réduire les tensions relationnelles.</p>
-                <p>Le travail s’appuie sur des situations réelles vécues par l’équipe.</p>
-                <p class="pcm-format-proof">Une base solide pour sécuriser les décisions collectives.</p>
-                <a class="text-link" href="{{ url_for('contact') }}">Voir si ce format est pertinent</a>
+                <span class="pcm-format-badge">Niveau central</span>
+                <h3>Niveau 2 — Mise en pratique</h3>
+                <p class="card-meta">Durée : 2 à 4 jours</p>
+                <p>Approfondir les repères pour traiter les situations sensibles de communication.</p>
+                <p>Le travail porte sur des cas concrets, au plus près des contraintes terrain.</p>
+                <p class="pcm-format-proof">Un format structurant pour managers et équipes.</p>
+                <a class="text-link" href="{{ url_for('contact') }}">Voir si c’est le bon niveau</a>
             </article>
-            <article class="card reveal">
+            <article class="card reveal" id="niveau-3">
                 <div class="pcm-format-step">
                     <span class="pcm-format-step-number">03</span>
-                    <span class="pcm-format-step-label">Ancrer la pratique sous pression</span>
+                    <span class="pcm-format-step-label">Accompagnement dans la durée</span>
                 </div>
-                <h3>Communication & décision sous pression</h3>
-                <p class="card-meta">Durée : 3 à 4 jours</p>
-                <p>Un approfondissement pour des équipes et managers exposés à des échanges tendus et des arbitrages sensibles.</p>
-                <p>Objectif : installer des réflexes relationnels durables pour décider et coopérer avec plus de clarté.</p>
+                <h3>Niveau 3 — Consolidation</h3>
+                <p class="card-meta">Jusqu’à 6 mois</p>
+                <p>Ancrer les pratiques dans la durée avec des points d’étape réguliers.</p>
+                <p>Objectif : tenir la qualité relationnelle et la décision dans le temps.</p>
                 <a class="text-link" href="{{ url_for('contact') }}">Évaluer la pertinence</a>
             </article>
         </div>
-        <p class="pcm-format-note">Chaque intervention est ajustée à vos enjeux, à votre contexte et au niveau de tension réel de vos équipes.</p>
+        <p class="pcm-format-note">Chaque niveau peut être combiné à l’accompagnement individuel des dirigeants selon le contexte.</p>
     </div>
 </section>
 
@@ -177,8 +177,7 @@
         <div class="card reveal flow">
             <p>Je ne vends pas des promesses magiques.</p>
             <p>Je ne fais pas du PCM “hors-sol”.</p>
-            <p>J’utilise le modèle PCM® comme un levier pour clarifier les interactions humaines lorsque la pression monte.</p>
-            <p>Les outils ne sont jamais une finalité : ils servent l’action et la décision réelle.</p>
+            <p>J’utilise le modèle PCM® non comme une finalité, mais comme un levier pour travailler sur des situations réelles de communication et de décision sous pression.</p>
         </div>
     </div>
 </section>
@@ -190,7 +189,7 @@
             <h2>Échanger sur vos enjeux</h2>
             <p>Un échange court permet de cadrer l’intervention la plus utile.</p>
         </div>
-        <a class="button" id="pcm-request-call-bottom" href="{{ url_for('contact') }}">Échanger sur le contexte</a>
+        <a class="button" id="pcm-request-call-bottom" href="{{ url_for('approche') }}#offre-individuelle">Voir aussi l’offre individuelle</a>
     </div>
 </section>
 {% endblock %}

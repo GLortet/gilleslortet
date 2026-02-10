@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% set title = "Contact | Gilles Lortet" %}
+{% set title = "Contact | Intervention communication sous pression" %}
 {% set page_class = "page-contact" %}
-{% set description = "Demander un échange avec Gilles Lortet pour clarifier vos besoins PCM ou Circuit Vital." %}
+{% set description = "Contactez Gilles Lortet pour cadrer un accompagnement individuel ou collectif en communication et décision sous pression." %}
 
 {% block content %}
 <section class="page-hero">
@@ -17,7 +17,7 @@
 <section class="section section-divider">
     <div class="container contact-grid">
         <div class="card reveal">
-            <h2>Votre demande</h2>
+            <h2>Demander un échange</h2>
             <p>Précisez votre besoin, je reviens vers vous pour convenir d'un créneau adapté.</p>
             <form class="contact-form" action="{{ url_for('contact_api') }}" method="post" data-contact-form novalidate>
                 <p class="form-intro">Dites-nous en quelques lignes votre contexte pour préparer un échange utile.</p>

@@ -1,21 +1,21 @@
 {% extends "base.html" %}
-{% set title = "Gilles Lortet | Formations PCM & Circuit Vital" %}
+{% set title = "Communication et décision sous pression | Formateur & consultant | Gilles Lortet" %}
 {% set page_class = "page-home" %}
-{% set description = "Formateur certifié PCM et créateur de Circuit Vital. Un accompagnement sobre, humain et exigeant pour dirigeants, RH et HSE." %}
+{% set description = "Formateur certifié PCM et créateur de Circuit Vital. Consultant en communication et décision sous pression pour dirigeants, managers et équipes, interventions en France (Grand Est)." %}
 
 {% block content %}
 <section class="hero home-major">
     <div class="container hero-grid">
         <div class="hero-copy stack">
-            <p class="eyebrow section-kicker">Formation PCM • Circuit Vital • Interventions terrain</p>
-            <h1>Rétablir de la clarté quand la tension monte.</h1>
+            <p class="eyebrow section-kicker">Communication sous pression • Décision managériale • Interventions terrain</p>
+            <h1>Communication et décision sous pression : retrouver de la clarté opérationnelle</h1>
             <div class="flow measure">
                 <p class="lead">J’accompagne dirigeants, RH et HSE dans des environnements exigeants pour apaiser les tensions relationnelles, sécuriser les décisions et remettre du dialogue utile sur le terrain.</p>
                 <p class="lead">Des interventions sobres, humaines, directement activables.</p>
             </div>
             <div class="hero-actions">
                 <a class="button" href="{{ url_for('contact') }}">Demander un échange</a>
-                <a class="button button-secondary" href="#formats">Voir les formats</a>
+                <a class="button button-secondary" href="#formats-offres">Voir les formats</a>
             </div>
             <p class="hero-note">15 minutes. Zéro engagement. Cadrage clair et utile.</p>
             <div class="hero-chips">
@@ -71,22 +71,23 @@
     </div>
 </section>
 
-<section class="section home-major" id="formats">
+<section class="section home-major" id="formats-offres">
     <div class="container">
         <div class="section-header flow measure reveal">
             <p class="eyebrow section-kicker">Formats</p>
-            <h2>Des formats clairs, activables, adaptés à vos enjeux</h2>
+            <h2>Deux offres structurées pour dirigeants, managers et équipes</h2>
             <p>Des interventions ciblées, du débrief individuel à l’ancrage collectif.</p>
         </div>
         <div class="cards format-grid">
             <article class="card reveal">
-                <h3>Débrief de profil PCM</h3>
+                <h3>Clarté Managériale Individuelle</h3>
                 <ul>
-                    <li>Pour qui: Dirigeants, managers, RH</li>
+                    <li>Pour qui: dirigeants, managers, DRH</li>
                     <li>Durée: 1h30 à 2h</li>
-                    <li>Livrable: Synthèse personnalisée + repères d’action</li>
-                    <li>Bénéfice: Décisions plus claires en contexte tendu</li>
+                    <li>Format: entretien individuel confidentiel</li>
+                    <li>Durée et tarif: 1h30 à 2h • 510€ HT</li>
                 </ul>
+                <a class="text-link" href="{{ url_for('approche') }}#offre-individuelle">Voir l'offre individuelle</a>
             </article>
             <article class="card reveal">
                 <h3>Atelier Circuit Vital</h3>
@@ -96,15 +97,17 @@
                     <li>Livrable: Routine simple et réplicable</li>
                     <li>Bénéfice: Moins de tensions physiques, plus de disponibilité mentale</li>
                 </ul>
+                <a class="text-link" href="{{ url_for('circuitvital') }}">Voir l’atelier Circuit Vital</a>
             </article>
             <article class="card reveal">
-                <h3>Formation PCM</h3>
+                <h3>Communication & décision sous pression (collectif)</h3>
                 <ul>
                     <li>Pour qui: Managers, équipes, organisations</li>
-                    <li>Durée: 1 à 4 jours selon objectifs</li>
-                    <li>Livrable: Repères communs + plan d’appropriation</li>
-                    <li>Bénéfice: Communication plus fluide, décisions mieux partagées</li>
+                    <li>Niveau 1: sensibilisation / cadrage (format court, ex. 1 journée)</li>
+                    <li>Niveau 2: approfondissement opérationnel (2 à 4 jours)</li>
+                    <li>Niveau 3: accompagnement dans la durée (jusqu’à 6 mois)</li>
                 </ul>
+                <a class="text-link" href="{{ url_for('pcm') }}#offre-collective">Voir l'offre collective en détail</a>
             </article>
         </div>
     </div>

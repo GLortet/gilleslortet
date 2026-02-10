@@ -41,3 +41,12 @@ Le site est ensuite disponible sur `http://localhost:5000`.
 - Vérifier que les fichiers statiques sont servis depuis `/static`.
 - Recharger l'application depuis le tableau de bord PythonAnywhere (bouton “Reload”).
 - Tester les routes principales : `/`, `/approche`, `/pcm`, `/circuitvital`, `/a-propos`, `/contact`.
+
+## Vérifications SEO rapides (post-déploiement)
+```bash
+curl -I https://www.gilleslortet.fr/
+curl -I https://www.gilleslortet.fr/static/styles.css
+curl -s https://www.gilleslortet.fr/robots.txt
+curl -s https://www.gilleslortet.fr/sitemap.xml
+curl -s https://www.gilleslortet.fr/pcm | rg -n "canonical|og:|twitter:card|application/ld\+json"
+```
